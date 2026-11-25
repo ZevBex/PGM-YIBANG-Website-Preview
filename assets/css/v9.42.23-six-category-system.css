@@ -1,0 +1,57 @@
+/* V9.42.23 — Six core golf-club categories */
+.filter-extra-label {
+  flex-basis: 100%;
+  margin-top: 7px;
+  color: #a9874e;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.15px;
+  text-align: right;
+}
+.category-empty-state {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, .85fr);
+  align-items: center;
+  gap: 30px;
+  margin-top: 28px;
+  padding: clamp(22px, 3vw, 38px);
+  border: 1px solid rgba(16,42,70,.12);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f7f9fb, #edf2f6);
+}
+.category-empty-state[hidden] { display: none !important; }
+.category-empty-copy { max-width: 680px; }
+.category-empty-kicker {
+  display: block;
+  margin-bottom: 12px;
+  color: #a9874e;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 1.15px;
+}
+.category-empty-state h3 {
+  margin: 0 0 12px;
+  color: #102a46;
+  font-size: clamp(22px, 2.5vw, 30px);
+  line-height: 1.2;
+}
+.category-empty-state p {
+  max-width: 660px;
+  margin: 0 0 20px;
+  color: #657487;
+  font-size: 12px;
+  line-height: 1.85;
+}
+.category-empty-state img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  justify-self: end;
+  border-radius: 12px;
+  background: #f1f4f7;
+}
+@media (max-width: 760px) {
+  .filter-extra-label { text-align: left; }
+  .category-empty-state { grid-template-columns: 1fr; gap: 18px; }
+  .category-empty-state img { max-width: 280px; justify-self: center; }
+}

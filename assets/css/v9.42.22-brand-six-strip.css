@@ -1,0 +1,96 @@
+/* V9.42.22 — restore original shallow proof-strip style with six PGM brand metrics */
+.v9422-six-metric-strip {
+  background: #f7f9fb;
+  border-top: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid #e4e9ee;
+}
+.v9422-six-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.v9422-six-metric-grid article {
+  display: flex;
+  min-width: 0;
+  min-height: 104px;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 12px;
+  border-right: 1px solid #e2e8ee;
+}
+.v9422-six-metric-grid article:first-child { padding-left: 12px; }
+.v9422-six-metric-grid article:last-child { border-right: 0; }
+.v9422-stat-value {
+  display: flex;
+  flex: 0 0 53px;
+  min-width: 53px;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 1px;
+  color: #142c42;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1.3px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.v9422-stat-main { font: inherit; }
+.v9422-stat-unit {
+  color: #b59458;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.v9422-stat-top {
+  flex-basis: 58px;
+  min-width: 58px;
+  color: #b59458;
+  font-size: 21px;
+  letter-spacing: -1px;
+}
+.v9422-gold-stat .v9422-stat-value { color: #a9874e; }
+.v9422-six-metric-grid b {
+  display: block;
+  color: #1c3043;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .35px;
+  line-height: 1.45;
+}
+.v9422-six-metric-grid small {
+  display: block;
+  margin-top: 3px;
+  color: #82909c;
+  font-size: 9px;
+  line-height: 1.45;
+}
+@media (max-width: 1180px) {
+  .v9422-six-metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .v9422-six-metric-grid article:nth-child(2) { border-right: 1px solid #e2e8ee; }
+  .v9422-six-metric-grid article:nth-child(3n) { border-right: 0; }
+  .v9422-six-metric-grid article:nth-child(n+4) { border-top: 1px solid #e2e8ee; }
+  .v9422-six-metric-grid article:nth-child(3) { padding-left: 12px; }
+}
+@media (max-width: 700px) {
+  .v9422-six-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v9422-six-metric-grid article {
+    min-height: 84px;
+    padding: 13px 8px;
+    gap: 8px;
+  }
+  .v9422-six-metric-grid article:nth-child(3n) { border-right: 1px solid #e2e8ee; }
+  .v9422-six-metric-grid article:nth-child(2n) { border-right: 0; }
+  .v9422-six-metric-grid article:nth-child(3) { padding-left: 8px; }
+  .v9422-six-metric-grid article:nth-child(n+3) { border-top: 1px solid #e2e8ee; }
+  .v9422-stat-value { flex-basis: 47px; min-width: 47px; font-size: 23px; }
+  .v9422-stat-top { flex-basis: 51px; min-width: 51px; font-size: 19px; }
+  .v9422-stat-unit { font-size: 9px; }
+  .v9422-six-metric-grid b { font-size: 7.5px; letter-spacing: .15px; }
+  .v9422-six-metric-grid small { font-size: 8px; }
+}
+@media (max-width: 380px) {
+  .v9422-six-metric-grid article { gap: 6px; padding-inline: 6px; }
+  .v9422-stat-value { flex-basis: 42px; min-width: 42px; font-size: 21px; }
+  .v9422-stat-top { flex-basis: 46px; min-width: 46px; font-size: 17px; }
+  .v9422-six-metric-grid b { font-size: 7px; }
+  .v9422-six-metric-grid small { font-size: 7.5px; }
+}

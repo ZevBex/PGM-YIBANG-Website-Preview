@@ -1,0 +1,255 @@
+/* PGM × YIBANG V9.1 — Contrast & readability refinement
+   Loaded after all theme styles. Preserves the dark-tech / champagne-gold visual language
+   while improving text contrast on light and dark surfaces. */
+:root {
+  --a11y-text-light-bg: #526575;
+  --a11y-text-light-bg-soft: #5b6e7d;
+  --a11y-gold-light-bg: #76551f;
+  --a11y-gold-light-bg-soft: #805d25;
+  --a11y-text-dark-bg: #c3d1db;
+  --a11y-text-dark-bg-soft: #b7c8d3;
+}
+
+/* Shared keyboard visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #1683a3 !important;
+  outline-offset: 3px !important;
+}
+
+/* V9 light panels: labels and supporting copy */
+.v9-page main .v9-section-head > p,
+.v9-page main .v9-step-copy,
+.v9-page main .v9-disclaimer,
+.v9-page main .v9-note {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v9-page main .v9-section .v9-index,
+.v9-page main .v9-control-heading small,
+.v9-page main .v9-progress-top,
+.v9-page main .v9-step-kicker,
+.v9-page main .v9-check-field legend,
+.v9-page main .v9-final-summary small {
+  color: var(--a11y-gold-light-bg) !important;
+}
+.v9-page main .v9-control-heading {
+  color: var(--a11y-text-light-bg) !important;
+  font-size: 9px;
+}
+.v9-page main .v9-live-pill {
+  color: #176b82 !important;
+}
+.v9-page main .v9-preview-spec small,
+.v9-page main .v9-preview-spec span,
+.v9-page main .v9-preview-coordinates,
+.v9-page main .v9-preview-footer {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v9-page main .v9-preview-spec small,
+.v9-page main .v9-preview-coordinates,
+.v9-page main .v9-preview-footer {
+  font-size: 8px;
+}
+.v9-page main .v9-preview-spec span {
+  font-size: 11px;
+}
+.v9-page main .v9-tour-tab > span {
+  color: var(--a11y-gold-light-bg) !important;
+}
+.v9-page main .v9-tour-tab > i {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v9-page main .v9-tour-tab:hover > span,
+.v9-page main .v9-tour-tab.is-active > span,
+.v9-page main .v9-tour-tab:hover > i,
+.v9-page main .v9-tour-tab.is-active > i {
+  color: #e4cf9b !important;
+}
+.v9-page main .v9-video-grid p:not(.v9-index) {
+  color: var(--a11y-text-light-bg) !important;
+}
+
+/* RFQ form: improve progress, option descriptions and helper labels */
+.v9-page main .v9-progress-dots {
+  color: var(--a11y-text-light-bg) !important;
+  font-size: 9px;
+}
+.v9-page main .v9-rfq-choice-grid button {
+  color: #203649;
+}
+.v9-page main .v9-rfq-choice-grid button > span {
+  color: var(--a11y-gold-light-bg) !important;
+  font-size: 9px;
+}
+.v9-page main .v9-rfq-choice-grid button small {
+  color: var(--a11y-text-light-bg) !important;
+  font-size: 10px;
+}
+.v9-page main .v9-rfq-choice-grid button.is-selected > span {
+  color: #e4cf9b !important;
+}
+.v9-page main .v9-rfq-choice-grid button.is-selected small {
+  color: #d5e0e7 !important;
+}
+.v9-page main .v9-check-grid label,
+.v9-page main .v9-consent {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v9-page main .v9-consent a {
+  color: var(--a11y-gold-light-bg-soft) !important;
+}
+.v9-page main .v9-rfq-actions > span {
+  color: var(--a11y-text-light-bg) !important;
+  font-size: 10px;
+}
+.v9-page main .v9-rfq-aside-sticky .v9-index {
+  color: #e4cf9b !important;
+}
+.v9-page main .v9-rfq-aside-sticky .v9-note,
+.v9-page main .v9-tour-description p {
+  color: var(--a11y-text-dark-bg) !important;
+}
+
+/* V8 homepage: white / pale sections */
+.v8-home .v8-proof-grid small,
+.v8-home .v8-intro-detail > p:not(.v8-intro-lead),
+.v8-home .v8-heading-side > p,
+.v8-home .v8-product-grid .product-card p,
+.v8-home .v8-product-foot,
+.v8-home .v8-factory-copy > p:not(.v8-eyebrow),
+.v8-home .v8-factory-disclaimer,
+.v8-home .v8-film-intro,
+.v8-home .v8-film-meta p,
+.v8-home .v8-film-note {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v8-home .v8-intro .v8-section-index,
+.v8-home .v8-products .v8-section-index,
+.v8-home .v8-factory .v8-section-index,
+.v8-home .v8-films .v8-section-index,
+.v8-home .v8-intro h2 em,
+.v8-home .v8-products .v8-section-heading h2 em,
+.v8-home .v8-films .v8-section-heading h2 em,
+.v8-home .v8-factory-copy .v8-eyebrow,
+.v8-home .v8-product-grid .product-card-meta,
+.v8-home .v8-film-meta > span {
+  color: var(--a11y-gold-light-bg) !important;
+}
+.v8-home .v8-intro .v8-eyebrow,
+.v8-home .v8-products .v8-eyebrow,
+.v8-home .v8-films .v8-eyebrow {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v8-home .v8-proof-icon span,
+.v8-home .v8-line-icon {
+  color: var(--a11y-gold-light-bg-soft) !important;
+}
+.v8-home .v8-product-grid .product-card-meta span:last-child {
+  color: var(--a11y-text-light-bg) !important;
+}
+.v8-home .v8-text-link b {
+  color: var(--a11y-gold-light-bg-soft) !important;
+}
+.v8-home .v8-product-foot,
+.v8-home .v8-proof-grid small,
+.v8-home .v8-film-note {
+  font-size: 10px;
+}
+.v8-home .v8-factory-disclaimer,
+.v8-home .v8-film-note {
+  line-height: 1.75;
+}
+
+/* V8 homepage: dark photographic / technology sections */
+.v8-home .v8-hero-trustline,
+.v8-home .v8-hero-bottom,
+.v8-home .v8-hero-coordinate,
+.v8-home .v8-athlete-note {
+  color: var(--a11y-text-dark-bg) !important;
+}
+.v8-home .v8-hero-bottom {
+  font-size: 9px;
+}
+.v8-home .v8-visual-note {
+  color: #eaf1f5 !important;
+  background: rgba(3, 12, 21, .78);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 9px;
+}
+.v8-home .v8-config-note {
+  color: var(--a11y-text-dark-bg) !important;
+}
+.v8-home .v8-factory-tabs button {
+  color: var(--a11y-text-dark-bg) !important;
+}
+.v8-home .v8-factory-tabs button:hover,
+.v8-home .v8-factory-tabs button.is-active {
+  color: #fff !important;
+}
+.v8-home .v8-athletes .v8-section-heading h2 em {
+  color: #e5cf9c !important;
+}
+.v8-home .v8-footer-bottom {
+  color: #b7c6d1 !important;
+  font-size: 10px;
+}
+
+/* Stronger form boundaries and legible option states. */
+.v9-page main .v9-two-selects select,
+.v9-page main .v9-form-grid select,
+.v9-page main .v9-form-grid input,
+.v9-page main .v9-wide-field textarea {
+  border-color: #b8c5ce;
+}
+.v9-page main .v9-two-selects select option,
+.v9-page main .v9-form-grid select option {
+  color: #203649;
+  background: #fff;
+}
+
+/* Keep gold section markers bright on the dark technology sections. */
+.v8-home .v8-configurator .v8-section-index,
+.v8-home .v8-athletes .v8-section-index,
+.v8-home .v8-final-cta .v8-section-index {
+  color: #e5cf9c !important;
+}
+
+/* Inner-page small labels on pale chips */
+.v8-page .athlete-category-label {
+  color: var(--a11y-gold-light-bg) !important;
+}
+
+@media (prefers-contrast: more) {
+  .v9-page main .v9-section-head > p,
+  .v9-page main .v9-step-copy,
+  .v9-page main .v9-disclaimer,
+  .v9-page main .v9-note,
+  .v8-home .v8-proof-grid small,
+  .v8-home .v8-intro-detail > p:not(.v8-intro-lead),
+  .v8-home .v8-heading-side > p,
+  .v8-home .v8-product-grid .product-card p,
+  .v8-home .v8-factory-copy > p:not(.v8-eyebrow),
+  .v8-home .v8-film-meta p {
+    color: #344b5d !important;
+  }
+  .v9-page main .v9-tour-tabs,
+  .v9-page main .v9-config-controls,
+  .v9-page main .v9-rfq-main {
+    border-color: #8798a5;
+  }
+}
+
+@media (max-width: 800px) {
+  .v8-home .v8-visual-note {
+    left: 14px;
+    right: 14px;
+    max-width: none;
+    text-align: left;
+  }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-label="Park golf club category illustration">
+<defs>
+  <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fafb"/><stop offset="1" stop-color="#e5ebf0"/></linearGradient>
+  <linearGradient id="goldHead" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0b5"/><stop offset=".28" stop-color="#d8b45d"/><stop offset=".62" stop-color="#a9782e"/><stop offset="1" stop-color="#f3d88d"/></linearGradient>
+  <linearGradient id="sole" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17283a"/><stop offset=".5" stop-color="#34475a"/><stop offset="1" stop-color="#071321"/></linearGradient>
+  <linearGradient id="shaft" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8d4e1d"/><stop offset=".48" stop-color="#e2a04d"/><stop offset="1" stop-color="#754018"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#d9e3eb"/><stop offset="1" stop-color="#eaf0f4" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1000" height="700" fill="url(#pbg)"/>
+<circle cx="680" cy="330" r="315" fill="url(#halo)"/>
+<path d="M0 590 Q350 520 1000 585 V700 H0Z" fill="#dce4eb" opacity=".55"/>
+<path d="M70 70 H930" stroke="#c8a96a" stroke-width="2" opacity=".5"/>
+<g transform="rotate(-8 600 390)">
+  <path d="M575 440 L470 115" stroke="url(#shaft)" stroke-width="24" stroke-linecap="round"/>
+  <path d="M575 440 L470 115" stroke="#fff0cf" stroke-width="4" opacity=".6" stroke-linecap="round"/>
+  <path d="M470 420 C520 330 675 290 825 340 C905 366 935 425 900 490 C860 565 710 610 565 575 C475 552 425 490 470 420Z" fill="url(#goldHead)" stroke="#f8e7b6" stroke-width="6"/>
+  <path d="M485 470 C595 520 765 520 900 445 L875 520 C780 600 620 610 520 555 C485 535 465 500 485 470Z" fill="url(#sole)" stroke="#1c2e40" stroke-width="5"/>
+  <path d="M535 395 C625 350 750 340 840 375" fill="none" stroke="#fff2c5" stroke-width="7" opacity=".8"/>
+  <path d="M560 435 C650 465 760 465 845 420" fill="none" stroke="#8e642b" stroke-width="4" opacity=".7"/>
+  <circle cx="610" cy="515" r="10" fill="#c6a15b" stroke="#f1d998" stroke-width="3"/>
+  <circle cx="790" cy="500" r="10" fill="#c6a15b" stroke="#f1d998" stroke-width="3"/>
+</g>
+<text x="70" y="625" fill="#102a46" font-family="Arial,sans-serif" font-size="28" letter-spacing="6">PARK GOLF CLUBS</text>
+<text x="72" y="660" fill="#718090" font-family="Arial,sans-serif" font-size="14" letter-spacing="4">SPECIALTY CLUB RANGE</text>
+</svg>

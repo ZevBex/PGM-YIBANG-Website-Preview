@@ -1,0 +1,3 @@
+SUPERSEDED — LOCAL DEVELOPMENT ONLY
+
+Use the V9.42.19 package and read `V9.42.19-LOCAL-PREVIEW.txt`. Do not upload to GitHub Pages, deploy, change DNS or publish to the production domain until the user explicitly approves deployment.

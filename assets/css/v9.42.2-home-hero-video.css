@@ -1,0 +1,45 @@
+/* V9.42.2 — homepage language-specific brand film background.
+   Existing V9.42 poster images remain visible until video playback starts. */
+.v8-home .v8-hero-image-wrap{
+  background:#071522;
+}
+.v8-home .v8-hero-image-wrap picture.v8-hero-picture{
+  z-index:0;
+  opacity:1;
+  transition:opacity .65s ease;
+}
+.v8-home .v8-hero-image-wrap .v8-hero-video{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  background:#071522;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .65s ease;
+}
+.v8-home .v8-hero-image-wrap .v8-hero-video.is-playing{
+  opacity:1;
+}
+.v8-home .v8-hero-image-wrap.v8-video-active picture.v8-hero-picture{
+  opacity:0;
+}
+@media(max-width:800px){
+  .v8-home .v8-hero-image-wrap .v8-hero-video{
+    object-position:center center;
+  }
+}
+@media(max-width:560px){
+  .v8-home .v8-hero-image-wrap .v8-hero-video{
+    object-position:center 42%;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .v8-home .v8-hero-image-wrap .v8-hero-video{
+    transition:none;
+  }
+}

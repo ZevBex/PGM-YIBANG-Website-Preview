@@ -1,0 +1,186 @@
+/* V9.42.23 — Vertical PGM metrics + compact YIBANG capability band */
+
+/* PGM brand proof strip: each item stacks value, title and descriptor */
+.v9422-six-metric-strip {
+  background: #f7f9fb;
+  border-top: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid #e4e9ee;
+}
+.v9422-six-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.v9422-six-metric-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  min-height: 118px;
+  gap: 5px;
+  padding: 14px 15px;
+  border-right: 1px solid #e2e8ee;
+}
+.v9422-six-metric-grid article:first-child { padding-left: 15px; }
+.v9422-six-metric-grid article:last-child { border-right: 0; }
+.v9422-stat-value {
+  display: block;
+  flex: 0 0 auto;
+  min-width: 0;
+  margin: 0 0 2px;
+  color: #142c42;
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: -1.1px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.v9422-stat-long {
+  font-size: 24px;
+  letter-spacing: -.55px;
+}
+.v9422-gold-stat .v9422-stat-value { color: #a9874e; }
+.v9422-six-metric-grid article > div {
+  width: 100%;
+  min-width: 0;
+}
+.v9422-six-metric-grid b {
+  display: block;
+  color: #1c3043;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.v9422-six-metric-grid small {
+  display: block;
+  margin-top: 3px;
+  color: #82909c;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+/* YIBANG capability band — concise and placed after PGM metrics */
+.v9423-yibang-capabilities {
+  padding: 18px 0 16px;
+  color: #f7f9fc;
+  background: #0b1b2a;
+  border-bottom: 1px solid rgba(201, 169, 106, .22);
+}
+.v9423-yibang-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr);
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(222, 232, 240, .18);
+}
+.v9423-yibang-eyebrow {
+  margin: 0 0 5px;
+  color: #c8a96a;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.35px;
+  line-height: 1.3;
+}
+.v9423-yibang-title h2 {
+  margin: 0;
+  color: #f7f9fc;
+  font-size: clamp(23px, 2vw, 28px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.55px;
+}
+.v9423-yibang-title h2 em {
+  color: #c8a96a;
+  font-style: normal;
+}
+.v9423-yibang-summary {
+  max-width: 540px;
+  justify-self: end;
+}
+.v9423-yibang-summary p {
+  margin: 0 0 5px;
+  color: #d5dee7;
+  font-size: 10px;
+  line-height: 1.55;
+}
+.v9423-yibang-summary .v8-text-link {
+  color: #e5c98e;
+  font-size: 8px;
+}
+.v9423-yibang-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.v9423-yibang-grid article {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  min-width: 0;
+  padding: 11px 18px 0 5px;
+  border-right: 1px solid rgba(222, 232, 240, .18);
+}
+.v9423-yibang-grid article + article { padding-left: 20px; }
+.v9423-yibang-grid article:last-child { border-right: 0; }
+.v9423-yibang-icon {
+  flex: 0 0 20px;
+  color: #c8a96a;
+  font-size: 20px;
+  line-height: 1;
+}
+.v9423-yibang-grid h3 {
+  margin: 0 0 3px;
+  color: #f7f9fc;
+  font-size: 9.5px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+.v9423-yibang-grid p {
+  margin: 0;
+  color: #c5d0dc;
+  font-size: 8.5px;
+  line-height: 1.45;
+}
+
+@media (max-width: 1180px) {
+  .v9422-six-metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .v9422-six-metric-grid article:nth-child(3n) { border-right: 0; }
+  .v9422-six-metric-grid article:nth-child(n+4) { border-top: 1px solid #e2e8ee; }
+  .v9423-yibang-head { grid-template-columns: 1fr 1fr; gap: 22px; }
+}
+@media (max-width: 700px) {
+  .v9422-six-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .v9422-six-metric-grid article {
+    min-height: 104px;
+    padding: 12px 12px;
+  }
+  .v9422-six-metric-grid article:nth-child(3n) { border-right: 1px solid #e2e8ee; }
+  .v9422-six-metric-grid article:nth-child(2n) { border-right: 0; }
+  .v9422-six-metric-grid article:nth-child(n+3) { border-top: 1px solid #e2e8ee; }
+  .v9422-stat-value { font-size: 25px; }
+  .v9422-stat-long { font-size: 21px; letter-spacing: -.35px; }
+  .v9422-six-metric-grid b { font-size: 10px; }
+  .v9422-six-metric-grid small { font-size: 9px; }
+
+  .v9423-yibang-capabilities { padding: 18px 0 15px; }
+  .v9423-yibang-head {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding-bottom: 11px;
+  }
+  .v9423-yibang-title h2 { font-size: 23px; }
+  .v9423-yibang-summary { justify-self: stretch; }
+  .v9423-yibang-summary p { font-size: 10px; }
+  .v9423-yibang-grid { grid-template-columns: 1fr; }
+  .v9423-yibang-grid article,
+  .v9423-yibang-grid article + article {
+    padding: 10px 2px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(222, 232, 240, .16);
+  }
+  .v9423-yibang-grid article:last-child { border-bottom: 0; }
+  .v9423-yibang-grid h3 { font-size: 10px; }
+  .v9423-yibang-grid p { font-size: 9px; }
+}

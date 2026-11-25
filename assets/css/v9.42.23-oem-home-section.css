@@ -1,0 +1,33 @@
+/* V9.42.23 OEM homepage section refinement — retain existing layout and visual system */
+.v8-heading-side .v8-oem-partner-title {
+  display: block;
+  margin: 0 0 10px;
+  color: #102a46;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1.05px;
+  line-height: 1.55;
+}
+.v8-heading-side .v8-oem-partner-title + p {
+  margin-top: 0;
+}
+.v8-product-grid .home-oem-card .product-card-meta span:first-child {
+  color: #9b7b45;
+}
+.v8-product-grid .home-oem-card .card-link-text {
+  color: #17334a;
+}
+@media (max-width: 760px) {
+  .v8-heading-side .v8-oem-partner-title {
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+  .v8-product-foot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.v8-product-grid .home-oem-card .product-visual-note {
+  top: 12px;
+  bottom: auto;
+}

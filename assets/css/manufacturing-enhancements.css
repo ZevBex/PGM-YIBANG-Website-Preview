@@ -1,0 +1,29 @@
+
+/* V9.42.35 — Manufacturing capabilities page refinement */
+.mfg-page .mfg-hero-fullbleed::before{background:linear-gradient(90deg,rgba(4,15,26,.97) 0%,rgba(4,15,26,.9) 33%,rgba(4,15,26,.6) 58%,rgba(4,15,26,.18) 100%),linear-gradient(0deg,rgba(4,15,26,.76) 0%,transparent 35%)!important}
+.mfg-page .mfg-hero-visual-note{max-width:360px}
+.mfg-page .mfg-evidence-section{padding-top:78px;padding-bottom:82px}
+.mfg-page .mfg-evidence-grid{display:grid;gap:16px}
+.mfg-page .mfg-evidence-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mfg-page .mfg-evidence-card{margin:0;overflow:hidden;border:1px solid #dde6eb;border-radius:14px;background:#fff;box-shadow:0 14px 34px rgba(16,42,70,.06)}
+.mfg-page .mfg-evidence-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e8eef3}
+.mfg-page .mfg-evidence-card figcaption{display:flex;flex-direction:column;gap:6px;padding:16px 17px 18px}
+.mfg-page .mfg-evidence-card figcaption>span{color:#b28a49;font-size:8px;font-weight:850;letter-spacing:1px;line-height:1.45}
+.mfg-page .mfg-evidence-card figcaption>strong{color:#102a46;font-size:15px;line-height:1.35}
+.mfg-page .mfg-evidence-card figcaption>small{color:#677b8b;font-size:10px;line-height:1.7}
+.mfg-page .mfg-evidence-note{margin:16px 0 0;color:#738595;font-size:11px;line-height:1.8}
+.mfg-page .mfg-evidence-link{margin:16px 0 0;color:#102a46;font-size:11px;font-weight:800;letter-spacing:.08em}
+.mfg-page .mfg-evidence-link a{color:#102a46;text-decoration:none;border-bottom:1px solid rgba(16,42,70,.18);padding-bottom:2px}
+.mfg-page .mfg-process-illustration img,.mfg-page .mfg-assembly-illustration img,.mfg-page .mfg-network-illustration img,.mfg-page .mfg-finish-visual img{object-fit:cover}
+.mfg-page .mfg-process-illustration figcaption span,.mfg-page .mfg-assembly-illustration figcaption span,.mfg-page .mfg-network-illustration figcaption span,.mfg-page .mfg-finish-visual-caption span{color:#c59e5f}
+.mfg-page .mfg-oem-cta-illustrative{background-image:linear-gradient(90deg,rgba(5,18,31,.97) 0%,rgba(7,24,40,.91) 52%,rgba(7,24,40,.75) 100%),url('../images/owner-provided/design-engineer-desk.webp')!important;background-size:cover;background-position:center center!important}
+@media(max-width:960px){
+  .mfg-page .mfg-evidence-grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .mfg-page .mfg-evidence-section{padding-top:60px;padding-bottom:62px}
+  .mfg-page .mfg-evidence-grid-3{grid-template-columns:1fr}
+  .mfg-page .mfg-evidence-card figcaption{padding:14px}
+  .mfg-page .mfg-evidence-card figcaption>strong{font-size:14px}
+  .mfg-page .mfg-evidence-card figcaption>small,.mfg-page .mfg-evidence-note,.mfg-page .mfg-evidence-link{font-size:9px}
+}

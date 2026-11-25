@@ -1,0 +1,36 @@
+/* V9.35 — buyer guide to technical notes cross-link */
+.v935-resource-crosslink{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+  padding:clamp(22px,3.2vw,38px);
+  border:1px solid rgba(16,42,86,.11);
+  border-radius:14px;
+  background:linear-gradient(115deg,#fff 0%,#f8fafc 100%);
+}
+.v935-resource-crosslink>div{max-width:700px}
+.v935-resource-crosslink .eyebrow{
+  margin:0 0 10px;
+  color:#b28a49;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:1.35px;
+}
+.v935-resource-crosslink h2{
+  margin:0 0 9px;
+  color:#102a56;
+  font-size:clamp(21px,2.4vw,30px);
+  line-height:1.2;
+}
+.v935-resource-crosslink p{
+  margin:0;
+  color:#6b7786;
+  font-size:12px;
+  line-height:1.75;
+}
+.v935-resource-crosslink .button{flex:0 0 auto;white-space:nowrap}
+@media(max-width:760px){
+  .v935-resource-crosslink{align-items:flex-start;flex-direction:column;gap:18px}
+  .v935-resource-crosslink .button{white-space:normal}
+}

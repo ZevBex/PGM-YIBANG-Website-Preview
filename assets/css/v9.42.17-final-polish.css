@@ -1,0 +1,29 @@
+/* V9.42.17 — targeted visual and interaction fixes. Keep existing design system intact. */
+
+/* Brand Strength in Numbers: v8-pages.css applies !important light headings globally.
+   Reassert the intended navy/gold hierarchy only inside this light section. */
+body.v8-page main .brand-strength-section-v94216 .brand-strength-heading-v94216 h2,
+body.v8-page main .brand-strength-section-v94216 .brand-strength-heading-v94216 h2 span {
+  color: #102a46 !important;
+}
+body.v8-page main .brand-strength-section-v94216 .brand-strength-heading-v94216 h2 em {
+  color: #a9874e !important;
+}
+body.v8-page main .brand-strength-section-v94216 .brand-strength-card-v94216 h3 {
+  color: #102a46 !important;
+}
+body.v8-page main .brand-strength-section-v94216 .brand-strength-card-v94216 p {
+  color: #687582 !important;
+}
+
+/* V9.42.19: Contact now shares the same floating WhatsApp action as every active page. */
+
+/* Keep explanatory copy readable on both light and dark sub-panels. */
+body.v8-page main .brand-strength-section-v94216 .brand-strength-heading-v94216 > p:last-child,
+body.v8-page main .brand-strength-section-v94216 .brand-strength-disclaimer-v94216 {
+  color: #687582 !important;
+}
+body.v8-page main .brand-strength-section-v94216 .platform-recognition-heading-v94216 > p:last-child,
+body.v8-page main .brand-strength-section-v94216 .platform-ranking-note-v94216 {
+  color: #b8c5d0 !important;
+}

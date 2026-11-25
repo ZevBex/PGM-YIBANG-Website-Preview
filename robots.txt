@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Add the absolute sitemap URL only after the production domain is confirmed.
+# Sitemap generation and canonical URLs remain pending domain confirmation.

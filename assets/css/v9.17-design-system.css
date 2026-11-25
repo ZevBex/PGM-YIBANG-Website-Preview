@@ -1,0 +1,329 @@
+/* PGM × YIBANG GOLF — V9.17 Design System
+   Local fonts, consistent editorial typography, anchored desktop dropdowns,
+   and a no-scroll mobile two-level navigation. */
+
+@font-face{font-family:"PGM Inter";src:url("../fonts/inter-regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"PGM Inter";src:url("../fonts/inter-medium.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:"PGM Inter";src:url("../fonts/inter-semibold.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:"PGM Inter";src:url("../fonts/inter-bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:"PGM Display";src:url("../fonts/inter-display-regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"PGM Display";src:url("../fonts/inter-display-semibold.woff2") format("woff2");font-style:normal;font-weight:600 800;font-display:swap}
+@font-face{font-family:"PGM Editorial";src:url("../fonts/eb-garamond-regular.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"PGM Editorial";src:url("../fonts/eb-garamond-italic.woff2") format("woff2");font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:"PGM Noto Sans SC";src:url("../fonts/noto-sans-sc-regular.woff2") format("woff2");font-style:normal;font-weight:400 800;font-display:swap}
+
+:root{
+  --navy:#102a56;
+  --navy-deep:#07182b;
+  --blue:#29486b;
+  --gold:#c8a96a;
+  --gold-light:#e3d2a8;
+  --ink:#182b3e;
+  --muted:#6b7280;
+  --line:#e1e7ed;
+  --soft:#f5f7fa;
+  --sans:"PGM Inter",Inter,"Segoe UI",Arial,sans-serif;
+  --display:"PGM Display","PGM Inter",Inter,"Segoe UI",Arial,sans-serif;
+  --serif:"PGM Editorial","EB Garamond",Georgia,serif;
+  --body:"PGM Inter",Inter,"Segoe UI",Arial,sans-serif;
+}
+html{font-kerning:normal;text-rendering:optimizeLegibility}
+body,button,input,select,textarea{font-family:var(--sans)!important;font-feature-settings:"kern" 1,"liga" 1}
+body{font-size:15px;line-height:1.72;color:var(--ink)}
+h1,h2,h3,h4,.hero h1,.page-hero h1,.v8-hero h1,.v8-section-heading h2,.mfg-page h1,.mfg-page h2{font-family:var(--display)!important;font-feature-settings:"kern" 1,"liga" 1}
+h1 em,h2 em,h3 em,.hero h1 em,.page-hero h1 em,.v8-hero h1 em,.v8-section-heading h2 em,.mfg-page h1 em,.mfg-page h2 em{font-family:var(--serif)!important;font-style:italic;font-weight:400}
+.nav-link,.nav-dropdown-toggle,.nav-dropdown-link,.button,.eyebrow,.v8-eyebrow,.v8-section-index,.footer-heading{font-family:var(--sans)!important}
+body.lang-zh,body.lang-zh button,body.lang-zh input,body.lang-zh select,body.lang-zh textarea{font-family:"PGM Noto Sans SC","Microsoft YaHei","PingFang SC",sans-serif!important;letter-spacing:0!important}
+body.lang-zh h1,body.lang-zh h2,body.lang-zh h3,body.lang-zh h4,body.lang-zh .hero h1,body.lang-zh .page-hero h1,body.lang-zh .v8-hero h1,body.lang-zh .v8-section-heading h2,body.lang-zh .mfg-page h1,body.lang-zh .mfg-page h2{font-family:"PGM Noto Sans SC","Microsoft YaHei","PingFang SC",sans-serif!important;letter-spacing:0!important;line-height:1.32!important;font-style:normal}
+body.lang-zh h1 em,body.lang-zh h2 em,body.lang-zh h3 em{font-family:inherit!important;font-style:normal;font-weight:600}
+body.lang-zh .eyebrow,body.lang-zh .v8-eyebrow,body.lang-zh .v8-section-index,body.lang-zh .footer-heading{letter-spacing:.04em!important}
+body.lang-zh .nav-link,body.lang-zh .nav-dropdown-toggle,body.lang-zh .nav-dropdown-link,body.lang-zh .button{letter-spacing:0!important}
+
+/* Desktop dropdowns: anchor each menu to its own trigger, never to the left edge of the navigation. */
+.v98-header .primary-nav-v917{gap:clamp(11px,1.15vw,18px)!important}
+.v98-header .nav-dropdown-v917{position:relative!important;display:block!important;flex:0 0 auto!important;z-index:1!important}
+.v98-header .nav-dropdown-v917[open]{z-index:40!important}
+.v98-header .nav-simple-menu-v917{
+  display:none!important;position:absolute!important;top:calc(100% + 12px)!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;
+  width:max-content!important;min-width:250px!important;max-width:min(340px,calc(100vw - 32px))!important;
+  flex-direction:column!important;gap:3px!important;padding:9px!important;margin:0!important;
+  border:1px solid rgba(255,255,255,.13)!important;border-top:2px solid var(--gold)!important;border-radius:0 0 13px 13px!important;
+  background:rgba(5,17,29,.985)!important;box-shadow:0 22px 48px rgba(0,0,0,.34)!important;
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);z-index:1200!important;
+}
+.v98-header .nav-dropdown-v917[open]>.nav-simple-menu-v917{display:flex!important}
+.v98-header .nav-dropdown-v917[data-nav-group="resources"]>.nav-simple-menu-v917{left:auto!important;right:0!important;transform:none!important}
+.v98-header .nav-simple-menu-v917 .nav-dropdown-link{
+  display:flex!important;align-items:center!important;min-height:38px!important;padding:10px 13px!important;border:0!important;border-radius:7px!important;
+  color:rgba(239,246,250,.84)!important;font-size:11px!important;font-weight:500!important;line-height:1.4!important;letter-spacing:0!important;white-space:nowrap!important;
+  background:transparent!important;text-decoration:none!important;transition:background .18s,color .18s!important
+}
+.v98-header .nav-simple-menu-v917 .nav-dropdown-link:hover,.v98-header .nav-simple-menu-v917 .nav-dropdown-link.is-current{color:#f1d9a0!important;background:rgba(200,169,106,.12)!important}
+.v98-header .nav-contact-v917.is-active,.v98-header .nav-dropdown-toggle.is-active{color:#e8d39d!important}
+.nav-mobile-back{display:none}
+
+/* Mobile: show top-level destinations first. A selected category opens a clean second screen, so no long page scroll is needed. */
+@media(max-width:1180px){
+  .site-header.v98-header,.site-header.v98-header.is-scrolled{height:72px!important;min-height:72px!important}
+  .v98-header .header-inner{width:calc(100% - 34px)!important;gap:12px!important}
+  .v98-header .menu-toggle{display:block!important}
+  .v98-header .primary-nav-v917{
+    position:fixed!important;top:72px!important;left:0!important;right:0!important;bottom:0!important;
+    display:none!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:0!important;
+    width:100%!important;height:calc(100dvh - 72px)!important;max-height:none!important;overflow:hidden!important;
+    padding:10px 22px 16px!important;margin:0!important;background:#071522!important;
+    box-shadow:0 20px 45px rgba(0,0,0,.34)!important;z-index:1050!important
+  }
+  .v98-header .primary-nav-v917.is-open{display:flex!important}
+  .v98-header .primary-nav-v917>.nav-link,.v98-header .primary-nav-v917>.nav-dropdown>.nav-dropdown-toggle{
+    display:flex!important;align-items:center!important;justify-content:space-between!important;width:100%!important;min-height:43px!important;
+    padding:10px 0!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.12)!important;
+    color:rgba(245,248,251,.92)!important;font-size:14px!important;font-weight:550!important;line-height:1.35!important;letter-spacing:0!important
+  }
+  .v98-header .primary-nav-v917>.nav-link.is-active:after{display:none!important}
+  .v98-header .nav-dropdown-v917{position:static!important;display:block!important;width:100%!important;flex:0 0 auto!important}
+  .v98-header .nav-simple-menu-v917{
+    position:static!important;top:auto!important;left:auto!important;right:auto!important;transform:none!important;
+    display:none!important;width:100%!important;min-width:0!important;max-width:none!important;max-height:none!important;overflow:visible!important;
+    padding:8px 0 0 0!important;margin:0!important;gap:2px!important;border:0!important;border-radius:0!important;
+    background:transparent!important;box-shadow:none!important;backdrop-filter:none!important
+  }
+  .v98-header .nav-dropdown-v917[open]>.nav-simple-menu-v917{display:flex!important}
+  .v98-header .nav-simple-menu-v917 .nav-dropdown-link{
+    min-height:39px!important;padding:9px 12px!important;border:0!important;border-left:2px solid rgba(200,169,106,.4)!important;border-radius:0 6px 6px 0!important;
+    color:rgba(235,242,247,.82)!important;font-size:13px!important;line-height:1.35!important;white-space:normal!important;background:rgba(255,255,255,.035)!important
+  }
+  .v98-header .language-switch{align-self:flex-start!important;margin:10px 0 0!important;padding:9px 12px!important;font-size:11px!important}
+  .v98-header .nav-cta{width:100%!important;min-width:0!important;height:46px!important;min-height:46px!important;margin:10px 0 0!important;font-size:11px!important}
+  .v98-header .nav-cta span:first-child{font-size:11px!important}
+  .v98-header .nav-mobile-back{
+    display:none;align-items:center;gap:12px;width:100%;min-height:44px;margin:0 0 8px;padding:0 0 10px;
+    border:0;border-bottom:1px solid rgba(255,255,255,.16);background:transparent;color:#e6d09d;
+    font:600 11px/1 var(--sans);letter-spacing:.08em;text-align:left;cursor:pointer
+  }
+  .v98-header .nav-mobile-back>span:first-child{font-size:20px;font-weight:400}
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-mobile-back{display:flex!important}
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-link,
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-dropdown:not(.is-mobile-active),
+  .v98-header .primary-nav-v917.mobile-subnav-open>.language-switch,
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-cta{display:none!important}
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-dropdown.is-mobile-active{display:block!important}
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-dropdown.is-mobile-active>.nav-dropdown-toggle{display:none!important}
+  .v98-header .primary-nav-v917.mobile-subnav-open>.nav-dropdown.is-mobile-active>.nav-simple-menu-v917{display:flex!important;padding-top:0!important}
+  .v98-header .primary-nav-v917.mobile-subnav-open .nav-simple-menu-v917 .nav-dropdown-link{min-height:41px!important;font-size:13px!important}
+  body.menu-open{overflow:hidden!important;touch-action:none}
+}
+@media(max-width:620px){
+  .v98-header .brand-lockup{min-width:0!important;gap:8px!important}
+  .v98-header .brand-mark{font-size:26px!important}
+  .v98-header .brand-divider{height:28px!important}
+  .v98-header .brand-sub{font-size:9px!important}
+  .v98-header .brand-sub small{font-size:6px!important}
+  .v98-header .primary-nav-v917{padding:8px 18px 12px!important}
+  .v98-header .primary-nav-v917>.nav-link,.v98-header .primary-nav-v917>.nav-dropdown>.nav-dropdown-toggle{min-height:41px!important;padding:9px 0!important}
+  .v98-header .nav-simple-menu-v917 .nav-dropdown-link{min-height:37px!important}
+}
+@media(max-height:640px) and (max-width:1180px){
+  .v98-header .primary-nav-v917{padding-top:7px!important;padding-bottom:9px!important}
+  .v98-header .primary-nav-v917>.nav-link,.v98-header .primary-nav-v917>.nav-dropdown>.nav-dropdown-toggle{min-height:38px!important;padding:7px 0!important}
+  .v98-header .language-switch{margin-top:6px!important;padding:7px 10px!important}
+  .v98-header .nav-cta{height:42px!important;min-height:42px!important;margin-top:7px!important}
+  .v98-header .nav-mobile-back{min-height:40px!important;margin-bottom:5px!important}
+  .v98-header .nav-simple-menu-v917 .nav-dropdown-link{min-height:36px!important;padding:7px 10px!important}
+}
+@media(prefers-reduced-motion:reduce){.v98-header *{transition:none!important;scroll-behavior:auto!important}}
+
+/* Brand and page-specific components retained from the previous release. */
+/* Brand Heritage links to the single canonical client-logo display on Manufacturing. */
+.brand-manufacturing-handoff-v917 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin: 48px 0 22px;
+  padding: 27px 30px;
+  border: 1px solid rgba(200,169,106,.42);
+  border-radius: 14px;
+  background: linear-gradient(110deg,rgba(255,255,255,.07),rgba(255,255,255,.025));
+}
+.brand-manufacturing-handoff-v917 h3 {
+  margin: 8px 0;
+  color: #f2e6ca;
+  font: 600 clamp(21px,2.5vw,30px)/1.15 var(--display,Georgia,serif);
+}
+.brand-manufacturing-handoff-v917 p:not(.brand-recognition-label) {
+  max-width: 700px;
+  margin: 0;
+  color: #c1ccd5;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.brand-manufacturing-handoff-v917 > a {
+  flex: 0 0 auto;
+  color: #e2c78b;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .9px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200,169,106,.65);
+  padding-bottom: 8px;
+}
+
+/* Manufacturing owns the single display of past manufacturing client logos. */
+.mfg-material-grid-v917 {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+.mfg-material-grid-v917 article {
+  overflow: hidden;
+  border: 1px solid #e4e9ed;
+  border-radius: 12px;
+  background: #fff;
+}
+.mfg-material-grid-v917 img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.mfg-material-grid-v917 h3 {
+  margin: 0;
+  padding: 14px 16px 16px;
+  color: #102a56;
+  font: 600 15px/1.25 var(--display,Georgia,serif);
+}
+.mfg-qc-overview-v917 {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 14px;
+  margin: 25px 0 24px;
+}
+.mfg-qc-overview-v917 article {
+  padding: 22px;
+  border: 1px solid #e0e7ed;
+  border-radius: 12px;
+  background: #fff;
+}
+.mfg-qc-overview-v917 article > span {
+  color: #b18b4e;
+  font: 700 11px/1 var(--body,Arial,sans-serif);
+  letter-spacing: 1px;
+}
+.mfg-qc-overview-v917 h3 {
+  margin: 12px 0 7px;
+  color: #102a56;
+  font: 600 18px/1.2 var(--display,Georgia,serif);
+}
+.mfg-qc-overview-v917 p {
+  margin: 0;
+  color: #64717d;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.mfg-section-link-v917 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #c8a96a;
+  color: #102a56;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* Insights is a technical-topic hub; Buyer Guide owns the sourcing checklist. */
+.v917-insights-section .section-heading { margin-bottom: 30px; }
+.v917-insight-cards {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 16px;
+}
+.v917-insight-cards article {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 25px;
+  border: 1px solid #e1e7eb;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(10,26,43,.055);
+}
+.v917-insight-cards article > span {
+  color: #a4824c;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: 1.25px;
+}
+.v917-insight-cards h3 {
+  margin: 16px 0 10px;
+  color: #102a56;
+  font: 600 21px/1.18 var(--display,Georgia,serif);
+}
+.v917-insight-cards p {
+  margin: 0 0 20px;
+  color: #66727e;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.v917-insight-cards a {
+  margin-top: auto;
+  color: #102a56;
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: .9px;
+  text-decoration: none;
+}
+.v917-buyer-guide-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f2f5f7;
+  color: #53616d;
+  font-size: 11px;
+}
+.v917-buyer-guide-link a {
+  color: #102a56;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .8px;
+  text-decoration: none;
+}
+
+/* Redirect pages preserve old URLs while consolidating the content. */
+.v917-legacy-redirect .page-hero { min-height: 55vh; }
+.v917-legacy-redirect .container { max-width: 850px; }
+.v917-player-case-link { background: #f3f6f8; }
+.v917-player-case-link h2 {
+  margin: 10px 0 14px;
+  color: #102a56;
+  font: 600 clamp(28px,3vw,40px)/1.1 var(--display,Georgia,serif);
+}
+.v917-player-case-link p:not(.eyebrow) {
+  max-width: 760px;
+  color: #5e6b76;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+  .brand-manufacturing-handoff-v917 { align-items: flex-start; flex-direction: column; padding: 23px; }
+  .mfg-material-grid-v917 { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .mfg-qc-overview-v917 { grid-template-columns: 1fr; }
+  .v917-insight-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .mfg-material-grid-v917 img { height: 120px; }
+  .v917-insight-cards article { min-height: 0; padding: 21px; }
+  .v917-buyer-guide-link { align-items: flex-start; flex-direction: column; }
+}
+
+body.v8-home:not(.lang-zh) .v8-hero h1 em{font-family:var(--serif)!important;font-style:italic!important;font-weight:400!important;color:var(--gold-light)!important}

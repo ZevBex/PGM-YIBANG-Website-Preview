@@ -1,0 +1,147 @@
+/* V9.31 — real CHONG Series product photography and gallery layout */
+
+/* Three real-image cards: full set, product detail and signing ceremony. */
+.pd-cobrand-page .pd-chong-gallery-grid-v929 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(16px, 2vw, 26px);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.pd-cobrand-page .pd-chong-gallery-card-v929 {
+  min-width: 0;
+  height: 100%;
+}
+.pd-cobrand-page .pd-chong-gallery-media-v929,
+.pd-cobrand-page .pd-chong-gallery-visual-v929 {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #0b1e2e;
+}
+.pd-cobrand-page .pd-chong-gallery-visual-v929 img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 0;
+}
+.pd-cobrand-page .pd-chong-gallery-caption-v929 {
+  min-height: 112px;
+  padding: 17px 18px 19px;
+}
+.pd-cobrand-page .pd-chong-gallery-caption-v929 strong {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.pd-cobrand-page .pd-chong-gallery-fullset-v931,
+.pd-cobrand-page .pd-chong-gallery-detail-v931,
+.pd-cobrand-page .pd-chong-gallery-signing-v930 {
+  object-fit: cover;
+}
+
+/* The player page keeps the ambassador poster as the main image and adds a real-product link. */
+.v931-player-product-strip-wrap {
+  margin-top: clamp(22px, 3vw, 34px);
+}
+.v931-player-product-strip {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  width: min(100%, 620px);
+  padding: 12px;
+  border: 1px solid rgba(16, 42, 86, .11);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(16, 42, 86, .07);
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.v931-player-product-strip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 32px rgba(16, 42, 86, .11);
+}
+.v931-player-product-strip > img {
+  display: block;
+  flex: 0 0 88px;
+  width: 88px;
+  height: 118px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 9px;
+  background: #eef1f4;
+}
+.v931-player-product-strip-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  min-width: 0;
+}
+.v931-player-product-strip-copy .eyebrow {
+  margin: 0;
+  color: #b28a49;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+.v931-player-product-strip-copy strong {
+  color: #102a56;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.v931-player-product-strip-copy > span:not(.eyebrow):not(.v931-player-product-strip-link) {
+  color: #687687;
+  font-size: 11px;
+  line-height: 1.65;
+}
+.v931-player-product-strip-link {
+  margin-top: 4px;
+  color: #102a56;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+@media (max-width: 1024px) and (min-width: 761px) {
+  .pd-cobrand-page .pd-chong-gallery-grid-v929 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .pd-cobrand-page .pd-chong-gallery-grid-v929 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+  .pd-cobrand-page .pd-chong-gallery-media-v929,
+  .pd-cobrand-page .pd-chong-gallery-visual-v929 {
+    aspect-ratio: 3 / 4;
+  }
+  .pd-cobrand-page .pd-chong-gallery-caption-v929 {
+    min-height: 0;
+  }
+  .v931-player-product-strip-wrap {
+    margin-top: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .v931-player-product-strip {
+    gap: 12px;
+    padding: 9px;
+    border-radius: 12px;
+  }
+  .v931-player-product-strip > img {
+    flex-basis: 76px;
+    width: 76px;
+    height: 102px;
+  }
+  .v931-player-product-strip-copy strong {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,9 @@
+PGM × YIBANG GOLF WEBSITE — V9.42.16 LIGHTWEIGHT UPDATE
+
+This update only changes the Brand Heritage / Brand Strength page.
+
+Copy these files into the root of your existing V9.42.15 website, preserving the folder structure:
+1. brand-heritage.html
+2. assets/css/brand-strength-numbers-v94216.css
+
+No other page, homepage banner, navigation, header/footer logo, video or manufacturing content is changed.

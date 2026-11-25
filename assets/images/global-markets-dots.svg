@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="Illustrative dotted world map">
+<defs><pattern id="dots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2.25" fill="#79b5c7" opacity=".72"/></pattern><filter id="glow"><feGaussianBlur stdDeviation="8"/></filter></defs>
+<g fill="url(#dots)" opacity=".95">
+<path d="M75 115L115 70 185 48 240 66 276 103 262 132 226 145 209 178 172 193 155 228 120 222 104 188 75 174 54 141Z"/>
+<path d="M224 250L259 267 282 307 273 353 255 401 236 455 211 420 207 369 189 331 196 287Z"/>
+<path d="M380 100L415 77 462 86 479 111 458 131 427 127 405 149 377 139Z"/>
+<path d="M417 155L458 140 497 155 518 193 507 238 486 284 456 320 431 291 420 249 399 211Z"/>
+<path d="M486 95L548 70 624 74 678 91 739 83 802 110 867 144 850 178 796 186 759 210 712 200 673 221 624 210 580 187 536 183 502 152Z"/>
+<path d="M757 285L790 272 825 292 833 322 809 344 774 334 752 311Z"/>
+<path d="M865 365L899 355 922 375 910 402 876 407 852 389Z"/>
+</g>
+<g fill="none" stroke="#c8a96a" stroke-width="1.3" opacity=".35">
+<path d="M80 160Q300 10 500 160T920 160"/>
+<path d="M125 270Q500 60 875 270"/>
+<path d="M230 370Q500 180 780 370"/>
+</g>
+<g fill="#e4cb94">
+<circle cx="172" cy="158" r="5"/><circle cx="250" cy="322" r="4"/><circle cx="450" cy="181" r="4"/><circle cx="515" cy="202" r="5"/><circle cx="640" cy="150" r="4"/><circle cx="750" cy="165" r="5"/><circle cx="804" cy="310" r="4"/>
+</g>
+</svg>

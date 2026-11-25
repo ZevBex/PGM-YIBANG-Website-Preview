@@ -1,0 +1,47 @@
+/* V9.40 — use the supplied complete PGM logo directly, without cropping or redesign */
+.brand-lockup-v940{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  flex:0 0 auto!important;
+  min-width:0!important;
+  max-width:100%!important;
+}
+.brand-lockup-v940 img{
+  display:block!important;
+  width:auto!important;
+  height:40px!important;
+  max-width:280px!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+}
+.site-footer .brand-lockup-v940 img{
+  height:42px!important;
+  max-width:300px!important;
+}
+@media (max-width:900px){
+  .brand-lockup-v940 img{
+    height:36px!important;
+    max-width:240px!important;
+  }
+  .site-footer .brand-lockup-v940 img{
+    height:38px!important;
+    max-width:260px!important;
+  }
+}
+@media (max-width:620px){
+  .brand-lockup-v940 img{
+    height:30px!important;
+    max-width:200px!important;
+  }
+  .site-footer .brand-lockup-v940 img{
+    height:32px!important;
+    max-width:215px!important;
+  }
+}
+@media (max-width:360px){
+  .brand-lockup-v940 img{
+    height:28px!important;
+    max-width:185px!important;
+  }
+}

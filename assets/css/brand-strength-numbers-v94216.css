@@ -1,0 +1,64 @@
+/* V9.42.16 — PGM Brand Strength in Numbers + compact platform ranking proof. */
+.v8-page[data-page="brand-heritage"] .brand-strength-section-v94216{
+  padding:clamp(54px,6vw,78px) 0 56px;
+  background:linear-gradient(180deg,#f7f8fa 0%,#eef2f5 100%);
+  border-bottom:1px solid #e1e7ec;
+  color:#102a46;
+}
+.brand-strength-heading-v94216{max-width:760px;margin:0 0 30px;}
+.brand-strength-heading-v94216 .eyebrow{color:#a9874e;font-weight:850;letter-spacing:1.55px;font-size:10px;}
+.brand-strength-heading-v94216 h2{margin:10px 0 12px;color:#102a46;font-family:var(--display,Georgia,serif);font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-1.3px;}
+.brand-strength-heading-v94216 h2 em{color:#a9874e;font-weight:450;}
+.brand-strength-heading-v94216>p:last-child{max-width:650px;margin:0;color:#687582;font-size:13px;line-height:1.8;}
+.brand-strength-grid-v94216{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+.brand-strength-card-v94216{position:relative;min-width:0;min-height:174px;padding:23px 24px 20px;overflow:hidden;background:#fff;border:1px solid #e1e7ec;border-radius:12px;box-shadow:0 8px 24px rgba(14,35,54,.035);}
+.brand-strength-card-v94216::before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,#c8a96a,rgba(200,169,106,.12));}
+.brand-strength-index-v94216{position:absolute;top:18px;right:20px;color:#aeb9c3;font-size:9px;font-weight:800;letter-spacing:1px;}
+.brand-strength-card-v94216>strong{display:block;margin:2px 0 13px;color:#102a46;font-family:var(--display,Georgia,serif);font-size:clamp(30px,3.2vw,41px);line-height:1;letter-spacing:-1.2px;}
+.brand-strength-card-v94216 h3{max-width:290px;margin:0 0 7px;color:#102a46;font-size:14px;line-height:1.42;font-weight:800;}
+.brand-strength-card-v94216 p{margin:0;color:#71808d;font-size:11px;line-height:1.65;}
+.platform-recognition-v94216{display:grid;grid-template-columns:minmax(190px,.72fr) minmax(0,2fr);gap:24px;align-items:center;margin-top:24px;padding:24px 25px;background:linear-gradient(125deg,#071426,#102b45);border:1px solid rgba(200,169,106,.35);border-radius:14px;box-shadow:0 15px 34px rgba(7,20,38,.12);}
+.platform-recognition-heading-v94216 .eyebrow{margin:0 0 9px;color:#d7bb7e;font-size:9px;letter-spacing:1.25px;line-height:1.5;}
+.platform-recognition-heading-v94216 h3{display:flex;align-items:baseline;gap:8px;margin:0;color:#fff;font-family:var(--display,Georgia,serif);font-size:clamp(27px,3vw,39px);line-height:1;letter-spacing:-1px;white-space:nowrap;}
+.platform-recognition-heading-v94216 h3 strong{font-weight:750;}
+.platform-recognition-heading-v94216 h3 span{color:#c8a96a;font-size:.8em;}
+.platform-recognition-heading-v94216>p:last-child{margin:10px 0 0;color:#b8c5d0;font-size:11px;line-height:1.65;}
+.platform-recognition-grid-v94216{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;}
+.platform-recognition-grid-v94216 article{min-width:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:91px;padding:12px 10px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:8px;}
+.platform-recognition-grid-v94216 article>span{display:block;max-width:100%;color:#cbd5de;font-size:8px;line-height:1.4;font-weight:850;letter-spacing:.7px;overflow-wrap:anywhere;}
+.platform-recognition-grid-v94216 article>strong{display:block;margin:6px 0 4px;color:#e5cb91;font-family:var(--display,Georgia,serif);font-size:clamp(19px,2vw,25px);line-height:1;letter-spacing:-.6px;}
+.platform-recognition-grid-v94216 article>small{color:#aebdca;font-size:8px;line-height:1.45;}
+.platform-ranking-note-v94216{grid-column:1/-1;margin:0;color:#9eafbd;font-size:10px;line-height:1.65;}
+.brand-strength-disclaimer-v94216{margin:20px 0 10px;color:#687582;font-size:10px;line-height:1.75;}
+.brand-strength-sources-v94216{display:flex;flex-wrap:wrap;align-items:center;gap:9px 18px;padding-top:12px;border-top:1px solid #dfe5ea;}
+.brand-strength-sources-v94216>span{color:#9a7840;font-size:8px;font-weight:900;letter-spacing:1.15px;}
+.brand-strength-sources-v94216 a{color:#43576a;font-size:8px;font-weight:850;letter-spacing:.45px;text-decoration:none;border-bottom:1px solid rgba(200,169,106,.7);padding-bottom:3px;}
+.brand-strength-sources-v94216 a:hover{color:#9a7840;}
+@media(max-width:1050px){
+  .platform-recognition-v94216{grid-template-columns:1fr;gap:17px;}
+  .platform-recognition-grid-v94216{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(max-width:760px){
+  .brand-strength-section-v94216{padding:48px 0 42px;}
+  .brand-strength-grid-v94216{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+  .brand-strength-card-v94216{min-height:158px;padding:19px 17px 17px;}
+  .brand-strength-card-v94216>strong{font-size:30px;}
+  .brand-strength-card-v94216 h3{font-size:12px;}
+  .brand-strength-card-v94216 p{font-size:10px;}
+  .platform-recognition-v94216{padding:21px 18px;}
+  .platform-recognition-heading-v94216 h3{font-size:32px;}
+  .platform-recognition-grid-v94216{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(max-width:420px){
+  .brand-strength-heading-v94216 h2{font-size:31px;}
+  .brand-strength-grid-v94216{gap:8px;}
+  .brand-strength-card-v94216{min-height:166px;padding:17px 13px 15px;}
+  .brand-strength-card-v94216>strong{font-size:27px;}
+  .brand-strength-index-v94216{top:14px;right:13px;font-size:8px;}
+  .platform-recognition-grid-v94216{gap:6px;}
+  .platform-recognition-grid-v94216 article{min-height:84px;padding:9px 8px;}
+  .platform-recognition-grid-v94216 article>span{font-size:7px;}
+  .platform-recognition-grid-v94216 article>strong{font-size:20px;}
+  .platform-recognition-grid-v94216 article>small{font-size:7px;}
+  .brand-strength-sources-v94216{gap:8px 12px;}
+}

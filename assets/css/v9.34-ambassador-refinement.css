@@ -1,0 +1,103 @@
+/* V9.34 — ambassador portrait and card refinement */
+.v8-athlete-card{
+  aspect-ratio:4 / 5.05!important;
+  min-height:0!important;
+  border-radius:16px!important;
+  border-color:rgba(220,233,247,.18)!important;
+}
+.v8-athlete-card img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 15%!important;
+  filter:none!important;
+}
+.v8-athlete-card:after{
+  background:linear-gradient(0deg,rgba(2,10,19,.96) 0%,rgba(2,10,19,.62) 29%,rgba(2,10,19,.12) 68%,rgba(2,10,19,.02) 100%)!important;
+}
+.v8-athlete-overlay{
+  left:22px!important;
+  right:22px!important;
+  bottom:21px!important;
+}
+.v8-athlete-overlay small{
+  display:inline-block!important;
+  max-width:100%!important;
+  color:#e8d5a8!important;
+  font-size:8px!important;
+  line-height:1.45!important;
+  letter-spacing:1.25px!important;
+  font-weight:850!important;
+  margin-bottom:9px!important;
+}
+.v8-athlete-overlay strong{
+  font-size:clamp(27px,2.7vw,40px)!important;
+  line-height:.98!important;
+  letter-spacing:-1.2px!important;
+}
+.v8-athlete-overlay em{
+  margin-top:13px!important;
+  padding-top:10px!important;
+}
+.v920-athlete-achievements{
+  max-width:340px!important;
+  font-size:9px!important;
+  line-height:1.65!important;
+}
+.athlete-profile-image{
+  aspect-ratio:4 / 5!important;
+  background:#071a34!important;
+}
+.athlete-profile-image img{
+  object-fit:cover!important;
+  object-position:center 16%!important;
+}
+.athlete-profile-image > span{
+  left:16px!important;
+  right:auto!important;
+  bottom:16px!important;
+  width:max-content!important;
+  max-width:calc(100% - 32px)!important;
+  padding:7px 11px!important;
+  border:1px solid rgba(232,213,168,.45)!important;
+  border-radius:999px!important;
+  background:rgba(5,20,39,.76)!important;
+  color:#ead8ad!important;
+  font-size:8px!important;
+  letter-spacing:.9px!important;
+  text-align:left!important;
+  backdrop-filter:blur(8px);
+}
+.athlete-profile-card{
+  overflow:hidden!important;
+  border-radius:15px!important;
+}
+.athlete-profile-content{
+  padding:25px 23px 24px!important;
+}
+.athlete-profile-content .eyebrow{
+  letter-spacing:1.5px!important;
+}
+.athlete-category-label{
+  border-radius:3px!important;
+  letter-spacing:.8px!important;
+}
+@media(max-width:760px){
+  .v8-athlete-grid{grid-template-columns:1fr!important;gap:16px!important}
+  .v8-athlete-card{aspect-ratio:16 / 10!important;min-height:320px!important}
+  .v8-athlete-overlay{left:19px!important;right:19px!important;bottom:18px!important}
+  .athlete-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .athlete-profile-card:last-child{grid-column:1 / -1!important;max-width:calc(50% - 9px)!important;justify-self:center!important}
+}
+@media(max-width:650px){
+  .athlete-profile-grid{grid-template-columns:1fr!important;gap:18px!important}
+  .athlete-profile-card:last-child{grid-column:auto!important;max-width:none!important}
+  .athlete-profile-image{aspect-ratio:4 / 5!important;max-height:none!important}
+  .athlete-profile-content{padding:22px!important}
+}
+@media(max-width:560px){
+  .v8-athlete-card{aspect-ratio:4 / 5!important;min-height:0!important}
+  .v8-athlete-overlay{left:20px!important;right:18px!important;bottom:19px!important}
+  .v8-athlete-overlay strong{font-size:34px!important}
+  .v920-athlete-achievements{font-size:9px!important}
+}

@@ -1,0 +1,88 @@
+
+/* V9.42.37 — Factory page refinement */
+body[data-page="factory"] .v7-page-hero{min-height:560px}
+body[data-page="factory"] .v7-page-hero-bg img{object-position:center 46%}
+body[data-page="factory"] .v7-page-hero-overlay{background:linear-gradient(90deg,rgba(4,17,31,.94) 0%,rgba(4,17,31,.82) 40%,rgba(4,17,31,.34) 100%),linear-gradient(0deg,rgba(4,17,31,.16),rgba(4,17,31,.16))}
+body[data-page="factory"] .v7-page-hero h1{max-width:780px}
+body[data-page="factory"] .v7-page-hero h1 em{color:#d8c08f}
+body[data-page="factory"] .factory-capability-strip{position:relative;z-index:2;background:#0b1c2b;color:#fff;border-top:1px solid rgba(214,193,145,.16);border-bottom:1px solid rgba(214,193,145,.16)}
+body[data-page="factory"] .factory-capability-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-top:25px;padding-bottom:25px}
+body[data-page="factory"] .factory-capability-card{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:6px 22px;border-right:1px solid rgba(218,228,236,.15);align-items:start}
+body[data-page="factory"] .factory-capability-card:first-child{padding-left:0}
+body[data-page="factory"] .factory-capability-card:last-child{border-right:0;padding-right:0}
+body[data-page="factory"] .factory-capability-index{font-family:Georgia,serif;font-size:20px;line-height:1;color:#c8a96a}
+body[data-page="factory"] .factory-capability-card strong{display:block;color:#f3f6f8;font-size:12px;line-height:1.5;font-weight:700}
+body[data-page="factory"] .factory-capability-card p{margin:6px 0 0;color:#aebdca;font-size:10px;line-height:1.7}
+body[data-page="factory"] .factory-photo-section{background:#f3f6f8}
+body[data-page="factory"] .factory-gallery-heading{align-items:end;margin-bottom:34px}
+body[data-page="factory"] .factory-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+body[data-page="factory"] .factory-photo-card{margin:0;min-width:0;overflow:hidden;border:1px solid #dce4e9;border-radius:13px;background:#fff;box-shadow:0 8px 28px rgba(12,37,58,.045)}
+body[data-page="factory"] .factory-photo-card img{display:block;width:100%;height:205px;object-fit:cover;background:#e8edf0;transition:transform .45s ease}
+body[data-page="factory"] .factory-photo-card:hover img{transform:scale(1.035)}
+body[data-page="factory"] .factory-photo-card figcaption{display:flex;flex-direction:column;gap:7px;padding:15px 16px 17px}
+body[data-page="factory"] .factory-photo-card figcaption span{color:#9a7a45;font-size:8px;letter-spacing:1.35px;font-weight:800}
+body[data-page="factory"] .factory-photo-card figcaption strong{color:#102a46;font-size:13px;line-height:1.45}
+body[data-page="factory"] .factory-gallery-footnote{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:20px;padding-top:16px;border-top:1px solid #dce4e9}
+body[data-page="factory"] .factory-gallery-footnote p{max-width:760px;margin:0;color:#71808c;font-size:10px;line-height:1.8}
+body[data-page="factory"] .factory-related-links{display:flex;flex-wrap:wrap;gap:18px}
+body[data-page="factory"] .factory-related-links a{color:#173858;font-size:9px;font-weight:800;letter-spacing:.35px;text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(200,169,106,.75);padding-bottom:6px}
+body[data-page="factory"] .factory-related-links a:hover{color:#9a7a45}
+body[data-page="factory"] #factory-explorer{background:#fff}
+body[data-page="factory"] #factory-explorer .v9-section-head{margin-bottom:28px}
+body[data-page="factory"] #factory-explorer .v9-tour-tab{min-height:72px}
+body[data-page="factory"] #factory-explorer .v9-tour-image-wrap img{object-position:center}
+body[data-page="factory"] #factory-explorer .v9-note{max-width:1040px;margin:18px auto 0;color:#748391;font-size:10px;line-height:1.8}
+body[data-page="factory"] .v9-video-section{background:#eaf0f3}
+body[data-page="factory"] .v7-audit-panel{border-color:#dbe3e8;box-shadow:0 15px 45px rgba(12,37,58,.045)}
+@media(max-width:1050px){
+  body[data-page="factory"] .factory-capability-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}
+  body[data-page="factory"] .factory-capability-card:nth-child(2){border-right:0}
+  body[data-page="factory"] .factory-capability-card:nth-child(3){padding-left:0}
+  body[data-page="factory"] .factory-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:800px){
+  body[data-page="factory"] .v7-page-hero{min-height:500px}
+  body[data-page="factory"] .factory-gallery-footnote{align-items:flex-start;flex-direction:column}
+  body[data-page="factory"] .factory-related-links{gap:14px}
+}
+@media(max-width:560px){
+  body[data-page="factory"] .v7-page-hero{min-height:490px}
+  body[data-page="factory"] .v7-page-hero-content{padding-top:62px;padding-bottom:62px}
+  body[data-page="factory"] .v7-page-hero h1{font-size:clamp(36px,10vw,44px);letter-spacing:-1.8px}
+  body[data-page="factory"] .v7-page-hero .page-lead{font-size:13px;line-height:1.75}
+  body[data-page="factory"] .factory-capability-grid{grid-template-columns:1fr;padding-top:14px;padding-bottom:14px}
+  body[data-page="factory"] .factory-capability-card{padding:14px 0;border-right:0;border-bottom:1px solid rgba(218,228,236,.13)}
+  body[data-page="factory"] .factory-capability-card:last-child{border-bottom:0}
+  body[data-page="factory"] .factory-photo-grid{grid-template-columns:1fr;gap:13px}
+  body[data-page="factory"] .factory-photo-card img{height:220px}
+  body[data-page="factory"] .factory-photo-card figcaption{padding:13px 14px 15px}
+  body[data-page="factory"] .factory-related-links{flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){body[data-page="factory"] .factory-photo-card img{transition:none}}
+
+/* Contrast tuning for the light gallery, tour introduction and video section. */
+body[data-page="factory"] .v7-page-hero-bg img{opacity:.92!important;filter:saturate(.92) brightness(.88)!important}
+body[data-page="factory"] .v7-page-hero-overlay{background:linear-gradient(90deg,rgba(4,17,31,.91) 0%,rgba(4,17,31,.72) 42%,rgba(4,17,31,.24) 100%),linear-gradient(0deg,rgba(4,17,31,.12),rgba(4,17,31,.12))!important}
+body[data-page="factory"] .factory-photo-section .section-heading h2{color:#102a46!important}
+body[data-page="factory"] .factory-photo-section .section-heading h2 em{color:#9a7a45!important}
+body[data-page="factory"] .factory-photo-section .section-heading .eyebrow{color:#9a7a45!important}
+body[data-page="factory"] .factory-photo-section .section-intro{color:#657585!important}
+body[data-page="factory"] #factory-explorer .v9-section-head h2{color:#102a46!important}
+body[data-page="factory"] #factory-explorer .v9-section-head>p{color:#657585!important}
+body[data-page="factory"] #factory-explorer .v9-section-head .v9-index{color:#9a7a45!important}
+body[data-page="factory"] .v9-video-grid h2{color:#102a46!important}
+body[data-page="factory"] .v9-video-grid p:not(.v9-index){color:#657585!important}
+body[data-page="factory"] .v9-video-grid .v9-index{color:#9a7a45!important}
+body[data-page="factory"] .v7-page-hero-bg{background-image:url('../images/owner-provided/pgm-product-development-meeting.webp');background-size:cover;background-position:center 46%}
+
+/* Keep the supplied development photograph visible in the hero while retaining its accessible image alt text. */
+body[data-page="factory"] .v7-page-hero-bg{background-image:url('../images/owner-provided/pgm-product-development-meeting.webp')!important;background-size:cover!important;background-position:center 46%!important}
+body[data-page="factory"] .v7-page-hero-bg img{opacity:0!important}
+body[data-page="factory"] .factory-photo-section .section-heading h2{font-size:clamp(32px,3.6vw,48px)!important;line-height:1.14!important;letter-spacing:-1.35px!important}
+body[data-page="factory"] #factory-explorer .v9-section-head h2{font-size:clamp(31px,3.5vw,46px)!important;line-height:1.14!important;letter-spacing:-1.2px!important}
+body[data-page="factory"] .v9-video-grid h2{font-size:clamp(31px,3.5vw,46px)!important;line-height:1.14!important;letter-spacing:-1.2px!important}
+body[data-page="factory"] .v7-audit-panel h2{letter-spacing:-1.2px!important}
+body[data-page="factory"] .v7-cta-band h2{letter-spacing:-1.2px!important}
+body[data-page="factory"] .v7-page-hero-bg img{opacity:.92!important}
+body[data-page="factory"] #factory-explorer .v9-tour-tab:not(.is-active) b{color:#506576!important}
+body[data-page="factory"] #factory-explorer .v9-tour-tab.is-active b{color:#fff!important}

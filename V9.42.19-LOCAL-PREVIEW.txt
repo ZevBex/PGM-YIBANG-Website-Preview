@@ -1,0 +1,16 @@
+PGM × YIBANG GOLF — V9.42.19 LOCAL PREVIEW
+
+This package is for local development and review only. Do not upload it to GitHub Pages or publish it to the production domain yet.
+
+1. Extract this ZIP to a local folder on your Windows computer.
+2. Open the extracted project folder in VS Code.
+3. Start a local server from the project root. Recommended: use the VS Code Live Server extension, right-click `index.html`, then choose “Open with Live Server”.
+4. Visit the homepage and every active page from the navigation and footer. The floating WhatsApp action should appear on all of them, including Contact, Project Builder, Thank You and the 404 page.
+5. On desktop, confirm the dark navy pill shows the WhatsApp-green icon and “Chat on WhatsApp”. On a mobile viewport, confirm it becomes a compact round green icon.
+6. Switch the site language to 中文 and confirm the label and pre-filled WhatsApp message change to Chinese. Switch back to English and confirm both return to English.
+7. Click the action only when ready to open WhatsApp. The message is pre-filled but is not sent automatically; the visitor must press Send in WhatsApp.
+8. Confirm that existing page actions remain available: form submission, Request a Quote, Project Builder, email and in-content WhatsApp links.
+9. `chong-series.html` and `factory-tour.html` are legacy aliases that redirect to their current destination pages. Check the destination pages for the floating action.
+10. Continue reviewing layout, form behavior and mobile spacing locally. Do not deploy until the user explicitly approves a release.
+
+The floating action reuses the WhatsApp URL already present in the page's footer/contact area. If that contact number changes, update the page's existing WhatsApp link; the floating action inherits it automatically.

@@ -1,0 +1,16 @@
+PGM × YIBANG GOLF WEBSITE — V9.42.15 UPDATE
+
+Base version: V9.42.14 — Tablet Banner Centering
+
+FULL WEBSITE PACKAGE
+1. Extract the full ZIP into a new folder.
+2. Open index.html to review the homepage.
+3. The package includes the complete website and all existing assets.
+
+LIGHTWEIGHT UPDATE PACKAGE
+1. Extract the update ZIP.
+2. Copy index.html and manufacturing.html into the root of your current website.
+3. Replace the existing files when prompted.
+4. Keep your existing assets, CSS, JavaScript and all other pages unchanged.
+
+This update only changes the homepage and manufacturing page content to make clubhead development and manufacturing capability clearer. It preserves the existing homepage video, banner images, header/footer logos, navigation and tablet banner centering fix.

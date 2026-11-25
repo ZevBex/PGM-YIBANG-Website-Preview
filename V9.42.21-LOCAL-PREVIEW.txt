@@ -1,0 +1,18 @@
+PGM × YIBANG GOLF — V9.42.21 LOCAL PREVIEW
+
+This package is for local development and review only. Do not upload it to GitHub Pages or publish it to the production domain.
+
+1. Extract this ZIP to a local folder.
+2. Open the extracted project folder in VS Code.
+3. Start Live Server from the project root by opening index.html.
+4. Review the homepage directly below the hero:
+   - Desktop: six PGM metrics in one horizontal row.
+   - Tablet: three columns by two rows.
+   - Mobile: two columns by three rows.
+   - YIBANG capabilities: a compact deep-navy band with three capability items.
+5. Switch between English and Chinese. Confirm metric descriptions, source notes and capability labels change correctly.
+6. Check the homepage at desktop, tablet and mobile widths.
+7. Confirm the remaining homepage sections, all-page Chat on WhatsApp action, navigation, forms and footer remain intact.
+8. This version is not deployed. Do not publish until the user explicitly approves deployment.
+
+All six PGM metrics and source links are retained from V9.42.20. They are brand-level figures and must not be described as YIBANG standalone factory capacity or assets.

@@ -1,0 +1,32 @@
+﻿slot_id,page,type,ratio,title_en,title_zh,suggested_material_en,suggested_material_zh
+BRAND-EVENT-01,brand-heritage.html,photo,16:9,Brand events & milestones,品牌活动与发展节点,"Company anniversary, exhibitions or official brand events.",公司周年活动、展会或品牌官方活动现场。
+BRAND-RECOGNITION-01,brand-heritage.html,document,4:5,Official recognition & honors,官方认可与荣誉资料,"Approved certificates, awards or official recognition records.",经确认可公开展示的证书、奖项或官方认可资料。
+COBRAND-PRODUCT-01,co-brand-collaboration.html,photo,4:5,Additional co-brand product,其他联名产品案例,Approved product photography from a separate co-brand project.,其他联名项目中经授权的产品实拍。
+COBRAND-LAUNCH-01,co-brand-collaboration.html,photo,16:9,Launch & collaboration event,联名发布与合作活动,"Product launch, signing or official collaboration event.",产品发布、签约或官方合作活动现场。
+COBRAND-VIDEO-01,co-brand-collaboration.html,video,16:9,Co-brand project film,品牌联名项目视频,"Official launch film, product story or partner interview.",官方发布视频、产品故事或合作伙伴访谈。
+FACTORY-OVERVIEW-01,factory.html,photo,16:9,Factory & workshop overview,厂房与车间全景,"Exterior, workshop panorama or production-area overview.",厂房外观、车间全景或生产区域整体画面。
+FACTORY-EQUIPMENT-01,factory.html,photo,16:9,Production equipment,生产设备,"Key machines, workstations and equipment in operation.",关键设备、加工工位及设备运行画面。
+FACTORY-LINE-01,factory.html,photo,16:9,Assembly & production lines,组装与生产线,"Club assembly, workflow and team-at-work photographs.",球杆组装、作业流程及团队工作场景。
+MFG-ENG-2D-01,manufacturing.html,document,16:9,2D engineering drawings,2D 工程图纸,Dimensioned drawings and engineering annotations.,带尺寸标注的工程图纸与设计说明。
+MFG-ENG-3D-01,manufacturing.html,photo,16:9,3D modeling & product structure,3D 建模与产品结构,"CAD model views, exploded structures or design review.",CAD 模型视图、结构爆炸图或设计评审画面。
+MFG-ENG-SAMPLE-01,manufacturing.html,photo,16:9,Prototype & sample development,原型与样品开发,"Physical samples, prototype review and revision stages.",实物样品、原型评审及修改过程。
+MFG-PROC-CNC-01,manufacturing.html,photo,16:9,CNC precision machining,CNC 精密加工,"Machining equipment, workpieces and process close-ups.",加工设备、工件及加工细节。
+MFG-PROC-CAST-FORGE-01,manufacturing.html,photo,16:9,Casting & forging,铸造与锻造,"Casting, precision casting or forging process photographs.",铸造、精密铸造或锻造成形工序照片。
+MFG-PROC-WELD-POLISH-01,manufacturing.html,photo,16:9,"Welding, grinding & polishing",焊接、打磨与抛光,"Welding stations, grinding and polishing operations.",焊接工位、打磨及抛光作业。
+MFG-PROC-FINISH-01,manufacturing.html,photo,16:9,Surface finishing,表面处理工艺,"Sandblasting, plating, PVD, painting or laser engraving.",喷砂、电镀、PVD 镀膜、喷漆或激光雕刻。
+MFG-ASSEMBLY-01,manufacturing.html,photo,16:9,Club assembly & bonding,球杆组装与粘接,"Shaft cutting, head bonding, grip installation and length adjustment.",杆身切割、杆头粘接、握把安装及杆长调整。
+MFG-AUTO-01,manufacturing.html,photo,16:9,Automated processing,机器人与自动化加工,Robot-assisted or automated production operations.,机器人辅助或自动化生产作业。
+MFG-QC-01,manufacturing.html,photo,16:9,Final inspection & finished clubs,成品检验与球杆成品,"Measurement, appearance inspection and final product review.",尺寸测量、外观检查及成品复核。
+MARKET-EXHIBITION-01,market-impact.html,photo,16:9,International exhibitions,国际展会与行业活动,"Booth, product display and buyer meetings.",展位、产品展示及采购商交流现场。
+MARKET-TOURNAMENT-01,market-impact.html,photo,16:9,Tournament & golf activities,高尔夫赛事与活动,"Tournament support, junior golf or community activities.",赛事支持、青少年高尔夫或大众高尔夫活动。
+MARKET-REGION-01,market-impact.html,photo,16:9,International market activities,国际市场合作活动,"Distributor visits, overseas customer events or market meetings.",经销商拜访、海外客户活动或市场交流。
+OEM-BRIEF-01,oem-odm.html,document,16:9,Product brief & reference sample,产品需求与参考样品,"Redacted client brief, sketch or reference sample.",脱敏后的客户需求、设计草图或参考样品。
+OEM-2D-3D-01,oem-odm.html,document,16:9,2D drawings & 3D engineering,2D 图纸与 3D 工程设计,"Approved engineering drawings, CAD models or structure views.",经确认可公开的工程图纸、CAD 模型或结构视图。
+OEM-SAMPLE-01,oem-odm.html,photo,4:5,Prototype & sample review,原型与样品评审,"Physical prototype, sample comparison and revision stages.",实物原型、样品对比及修改阶段。
+OEM-FINISHED-01,oem-odm.html,photo,4:5,Approved finished product,确认后的定制成品,Final product photography after customer approval.,客户确认后的最终产品实拍。
+PLAYER-CAMPAIGN-01,player-collaboration.html,photo,4:5,Official player campaign photography,职业球员官方宣传照片,Approved portraits or campaign images for PGM partnerships.,经授权用于 PGM 合作展示的球员肖像或宣传图。
+PLAYER-EVENT-01,player-collaboration.html,photo,16:9,Player events & joint appearances,球员合作活动与公开亮相,"Official events, product presentations or joint appearances.",官方活动、产品展示或双方共同出席的活动现场。
+PLAYER-VIDEO-01,player-collaboration.html,video,16:9,Player partnership video,职业球员合作视频,"Official interview, collaboration story or product presentation.",官方访谈、合作故事或产品展示视频。
+QC-HEAD-WEIGHT-01,quality.html,photo,16:9,Head weight & club measurement,杆头重量与球杆测量,Head-weight checks and model-specific measurement records.,杆头重量检测及对应型号测量记录。
+QC-LOFT-LIE-SW-01,quality.html,photo,16:9,"Loft, lie & swing-weight checks",Loft、Lie 与挥重检测,Measurement equipment and the inspection process.,检测设备及实际测量流程。
+QC-FINAL-01,quality.html,photo,16:9,Appearance & final inspection,外观检查与成品检验,"QC staff reviewing finish, assembly and approved specifications.",QC 人员检查表面处理、组装状态及确认规格。

@@ -1,0 +1,24 @@
+PGM × YIBANG GOLF — V9.42.20 LOCAL PREVIEW
+
+This package is for local development and review only. Do not upload it to GitHub Pages or publish it to the production domain.
+
+1. Extract this ZIP to a local folder on your Windows computer.
+2. Open the extracted project folder in VS Code.
+3. Start a local server from the project root. Recommended: use the VS Code Live Server extension, right-click `index.html`, then choose “Open with Live Server”.
+4. Review the homepage immediately below the hero:
+   - PGM BRAND AT A GLANCE: six metrics in a 3 × 2 desktop grid.
+   - Source links and reporting periods appear below each metric.
+   - A disclaimer distinguishes PGM brand-level data from YIBANG standalone factory capacity.
+   - YIBANG CAPABILITIES appears as a separate deep-navy section with three capability areas.
+5. Switch the site language to 中文 and confirm all headings, descriptions, source notes and capability labels change to Chinese. Switch back to English and confirm they return to English.
+6. Check desktop, tablet and mobile layouts. On desktop the metrics use three columns; on tablet and mobile they use two columns; on very narrow screens they stack to one column.
+7. Confirm the existing homepage partnership section, product sections, calls to action and footer remain intact.
+8. Confirm the floating `Chat on WhatsApp` action still appears and opens WhatsApp with a pre-filled message; the visitor must press Send themselves.
+9. Continue reviewing all pages locally. Do not deploy until the user explicitly approves a release.
+
+Metric source links:
+- China Golf Association article, 7 September 2026: https://www.cgagolf.org.cn/hnews_details/481.html
+- PGM 2026 Amazon sales performance report, 10 July 2026: https://www.pgmgolf.com/newsinfo/9148476.html
+- PGM Global Partner page: https://www.pgmgolf.com/Global_Partner
+
+The displayed metrics are PGM brand-level figures and must not be described as YIBANG standalone factory capacity or assets.

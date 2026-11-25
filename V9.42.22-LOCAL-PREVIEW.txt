@@ -1,0 +1,10 @@
+V9.42.22 LOCAL PREVIEW
+
+1. Extract the ZIP to a new folder. Do not overwrite the previous version.
+2. Open the extracted folder in VS Code.
+3. Open index.html with Live Server.
+4. Review the compact six-item proof strip directly below the homepage hero.
+5. Check desktop, tablet and mobile widths.
+6. Confirm the six PGM metrics display without source notes.
+7. YIBANG engineering and manufacturing information remains available in the existing Manufacturing, Capabilities and OEM/ODM pages and other homepage content.
+8. This package is for local development only. Do not deploy to GitHub Pages until the user explicitly approves deployment.

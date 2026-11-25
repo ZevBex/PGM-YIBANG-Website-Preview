@@ -1,0 +1,134 @@
+/* V9.29 · CHONG Series case gallery harmonized with the main co-brand page */
+.pd-cobrand-page .pd-chong-gallery-v929 {
+  padding: 88px 0;
+  scroll-margin-top: 94px;
+  background: linear-gradient(128deg,#0b2536 0%,#102e40 68%,#183c4b 100%);
+  color: #eaf0f4;
+}
+.pd-cobrand-page .pd-chong-gallery-v929 > .container {
+  max-width: none;
+}
+.pd-cobrand-page .pd-chong-gallery-heading-v929 {
+  display: grid;
+  grid-template-columns: minmax(0,1.1fr) minmax(290px,.9fr);
+  gap: clamp(30px,5vw,76px);
+  align-items: end;
+  margin: 0 0 34px;
+}
+.pd-cobrand-page .pd-chong-gallery-heading-v929 .eyebrow {
+  margin: 0 0 13px;
+  color: #d6b978;
+  font-size: 9px;
+  line-height: 1.55;
+  letter-spacing: 1.4px;
+}
+.v8-page .pd-cobrand-page .pd-chong-gallery-heading-v929 h2 {
+  margin: 0;
+  color: #f7f9fb !important;
+  font-size: clamp(34px,3.8vw,52px);
+  line-height: 1.09;
+  letter-spacing: -1.5px;
+}
+.v8-page .pd-cobrand-page .pd-chong-gallery-heading-v929 h2 em {
+  color: #dec388 !important;
+  font-style: normal;
+}
+.v8-page .pd-cobrand-page .pd-chong-gallery-lead-v929 {
+  max-width: 470px;
+  margin: 0;
+  color: #c1d1db !important;
+  font-size: 12px;
+  line-height: 1.85;
+}
+.pd-cobrand-page .pd-chong-gallery-grid-v929 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  align-items: stretch;
+  gap: clamp(15px,2.4vw,28px);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.pd-cobrand-page .pd-chong-gallery-card-v929 {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid rgba(218,195,143,.25);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,.045);
+  box-shadow: 0 15px 35px rgba(0,0,0,.11);
+}
+.pd-cobrand-page .pd-chong-gallery-media-v929,
+.pd-cobrand-page .pd-chong-gallery-visual-v929 {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0a1e2f;
+}
+.pd-cobrand-page .pd-chong-gallery-media-v929 { text-decoration: none; }
+.pd-cobrand-page .pd-chong-gallery-visual-v929::before,
+.pd-cobrand-page .pd-chong-gallery-visual-v929::after { display: none !important; }
+.pd-cobrand-page .pd-chong-gallery-visual-v929 img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  border-radius: 0;
+}
+.pd-cobrand-page .pd-chong-gallery-concept-v929 { object-fit: contain; background:#0b1e2e; }
+.pd-cobrand-page .pd-chong-gallery-backup-v929 { object-fit: cover; opacity:.95; z-index:1; }
+.pd-cobrand-page .pd-chong-gallery-press-v929 { object-fit: cover; z-index:2; }
+.pd-cobrand-page .pd-chong-gallery-caption-v929 {
+  padding: 18px 22px 20px;
+  min-height: 102px;
+  color: #c5d2dc;
+  font-size: 11px;
+  line-height: 1.65;
+}
+.pd-cobrand-page .pd-chong-gallery-caption-v929 strong {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #f5f8fa;
+  font-size: 13px;
+  font-weight: 720;
+}
+.v8-page .pd-cobrand-page .pd-chong-gallery-note-v929 {
+  max-width: 950px;
+  margin: 21px 0 0;
+  color: #aebfcb !important;
+  font-size: 10px;
+  line-height: 1.8;
+}
+/* Legacy v8 styles set line-height:0 on nested button spans; restore a readable CTA. */
+.v8-page .pd-cobrand-page .pd-chong-gallery-actions-v929 .button span {
+  display: inline-block;
+  height: auto;
+  font-size: 10px;
+  line-height: 1.45;
+  white-space: normal;
+}
+.pd-cobrand-page .pd-chong-gallery-actions-v929 {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 26px 0 0;
+}
+@media(max-width:760px) {
+  .pd-cobrand-page .pd-chong-gallery-v929 { padding: 65px 0; }
+  .pd-cobrand-page .pd-chong-gallery-heading-v929 { grid-template-columns:1fr; gap:16px; margin-bottom:24px; }
+  .pd-cobrand-page .pd-chong-gallery-grid-v929 { grid-template-columns:1fr; gap:16px; }
+  .pd-cobrand-page .pd-chong-gallery-caption-v929 { min-height:0; }
+  .pd-cobrand-page .pd-chong-gallery-actions-v929 { gap:10px; }
+}
+@media(max-width:480px) {
+  .v8-page .pd-cobrand-page .pd-chong-gallery-heading-v929 h2 { font-size: clamp(30px,7.8vw,38px); }
+  .pd-cobrand-page .pd-chong-gallery-caption-v929 { padding: 14px 16px 17px; font-size:10px; }
+  .pd-cobrand-page .pd-chong-gallery-actions-v929 { display:grid; grid-template-columns:1fr; }
+  .pd-cobrand-page .pd-chong-gallery-actions-v929 .button { width:100%; justify-content:center; }
+}

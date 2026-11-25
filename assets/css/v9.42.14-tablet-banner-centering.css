@@ -1,0 +1,8 @@
+/* V9.42.14 — Center the homepage banner film poster on tablet widths.
+   Desktop keeps its right-weighted crop; mobile retains its existing center crop. */
+@media (min-width: 801px) and (max-width: 1180px) {
+  .v8-home .v8-hero-image-wrap picture.v8-hero-picture img,
+  .v8-home .v8-hero-image-wrap .v8-hero-video {
+    object-position: center center !important;
+  }
+}

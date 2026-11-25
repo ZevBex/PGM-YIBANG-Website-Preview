@@ -1,0 +1,157 @@
+/* V9.9 — adaptive full-width banners. Shared visual baseline, natural content height. */
+:root{
+  --v99-banner-min-desktop:480px;
+  --v99-banner-min-tablet:430px;
+  --v99-banner-min-mobile:370px;
+}
+
+/* Standard inner pages: keep one consistent minimum canvas, but never crop content. */
+.v8-page .page-hero,
+.v8-page .v7-page-hero{
+  height:auto!important;
+  min-height:var(--v99-banner-min-desktop)!important;
+  max-height:none!important;
+  padding:clamp(68px,7vw,92px) 0 clamp(62px,6.5vw,84px)!important;
+  display:flex!important;
+  align-items:center!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+.v8-page .page-hero .container,
+.v8-page .v7-page-hero-content{
+  width:min(1320px,calc(100% - 72px))!important;
+  max-width:1320px!important;
+  min-width:0!important;
+  height:auto!important;
+  min-height:0!important;
+  margin-inline:auto!important;
+  padding:0!important;
+  position:relative!important;
+  z-index:2!important;
+  flex:0 1 auto!important;
+}
+.v8-page .page-hero h1,
+.v8-page .v7-page-hero h1{
+  max-width:940px!important;
+  line-height:1.08!important;
+  margin-bottom:16px!important;
+  overflow-wrap:break-word!important;
+  text-wrap:pretty!important;
+}
+.v8-page .page-hero .page-lead,
+.v8-page .v7-page-hero .page-lead{
+  max-width:740px!important;
+  line-height:1.8!important;
+  margin:0!important;
+}
+.v8-page .page-hero .hero-actions,
+.v8-page .v7-page-hero .hero-actions{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  gap:12px!important;
+  margin-top:24px!important;
+}
+.v8-page .page-hero .breadcrumb,
+.v8-page .v7-page-hero .breadcrumb{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  gap:9px!important;
+  margin:24px 0 0!important;
+  line-height:1.6!important;
+}
+.v8-page .page-hero-visual-note{margin-top:16px!important;line-height:1.6!important}
+.v8-page .v7-page-hero-bg,
+.v8-page .v7-page-hero-overlay{position:absolute!important;inset:0!important}
+.v8-page .v7-page-hero-bg img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 48%!important}
+
+/* The player-collaboration hero contains a visual alongside the copy. Let the grid
+   define the banner height instead of forcing the text into a fixed-height box. */
+.v8-page .collab-hero .container{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr)!important;
+  align-items:center!important;
+  gap:clamp(22px,3vw,42px)!important;
+}
+.v8-page .collab-hero .collab-hero-copy{min-width:0!important;max-width:760px!important}
+.v8-page .collab-hero .collab-hero-visual{min-width:0!important;width:100%!important;max-width:540px!important}
+.v8-page .collab-hero .collab-hero-visual img{display:block!important;width:100%!important;height:auto!important;max-height:350px!important;object-fit:cover!important}
+
+/* Digital experience heroes have a two-column feature visual and more copy. Their
+   height is content-led too; the visual remains a consistent, contained panel. */
+.v8-page.v9-page .v9-hero{
+  height:auto!important;
+  min-height:540px!important;
+  max-height:none!important;
+  padding:clamp(88px,9vw,116px) 0 clamp(64px,7vw,84px)!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+.v8-page.v9-page .v9-hero-grid{
+  height:auto!important;
+  min-height:0!important;
+  align-items:center!important;
+}
+.v8-page.v9-page .v9-hero-art{
+  height:300px!important;
+  min-height:300px!important;
+  max-height:360px!important;
+}
+
+@media(max-width:980px){
+  .v8-page .page-hero .container,
+  .v8-page .v7-page-hero-content{width:calc(100% - 52px)!important}
+  .v8-page .collab-hero .container{grid-template-columns:1fr!important;gap:22px!important}
+  .v8-page .collab-hero .collab-hero-visual{max-width:620px!important;justify-self:start!important}
+  .v8-page .collab-hero .collab-hero-visual img{max-height:270px!important}
+  .v8-page.v9-page .v9-hero{min-height:0!important;padding:72px 0 58px!important}
+  .v8-page.v9-page .v9-hero-grid{grid-template-columns:1fr!important;gap:26px!important}
+  .v8-page.v9-page .v9-hero-art{height:260px!important;min-height:260px!important}
+}
+
+@media(max-width:800px){
+  .v8-page .page-hero,
+  .v8-page .v7-page-hero{
+    min-height:var(--v99-banner-min-tablet)!important;
+    padding:58px 0 50px!important;
+  }
+  .v8-page .page-hero .container,
+  .v8-page .v7-page-hero-content{width:calc(100% - 42px)!important}
+  .v8-page .page-hero h1,
+  .v8-page .v7-page-hero h1{font-size:clamp(36px,7.2vw,52px)!important;line-height:1.1!important;letter-spacing:-1.8px!important}
+  .v8-page .page-hero .page-lead,
+  .v8-page .v7-page-hero .page-lead{font-size:13px!important;line-height:1.75!important}
+  .v8-page .page-hero .breadcrumb,
+  .v8-page .v7-page-hero .breadcrumb{margin-top:18px!important}
+  .v8-page.v9-page .v9-hero{padding:64px 0 48px!important}
+  .v8-page.v9-page .v9-hero-art{height:230px!important;min-height:230px!important}
+}
+
+@media(max-width:560px){
+  .v8-page .page-hero,
+  .v8-page .v7-page-hero{
+    min-height:var(--v99-banner-min-mobile)!important;
+    padding:48px 0 42px!important;
+  }
+  .v8-page .page-hero .container,
+  .v8-page .v7-page-hero-content{width:calc(100% - 34px)!important}
+  .v8-page .page-hero h1,
+  .v8-page .v7-page-hero h1{font-size:clamp(32px,8.6vw,43px)!important;line-height:1.12!important;letter-spacing:-1.25px!important;margin-bottom:13px!important}
+  .v8-page .page-hero .eyebrow,
+  .v8-page .v7-page-hero .eyebrow{font-size:8px!important;letter-spacing:1.2px!important;margin-bottom:12px!important}
+  .v8-page .page-hero .page-lead,
+  .v8-page .v7-page-hero .page-lead{font-size:12px!important;line-height:1.7!important;max-width:100%!important}
+  .v8-page .page-hero .hero-actions,
+  .v8-page .v7-page-hero .hero-actions{gap:9px!important;margin-top:18px!important}
+  .v8-page .page-hero .hero-actions .button,
+  .v8-page .v7-page-hero .hero-actions .button{max-width:100%!important;white-space:normal!important}
+  .v8-page .page-hero .breadcrumb,
+  .v8-page .v7-page-hero .breadcrumb{font-size:8px!important;margin-top:16px!important}
+  .v8-page .collab-hero .collab-hero-visual img{max-height:220px!important}
+  .v8-page.v9-page .v9-hero{min-height:0!important;padding:50px 0 42px!important}
+  .v8-page.v9-page .v9-hero-grid{height:auto!important;gap:20px!important}
+  .v8-page.v9-page .v9-hero h1{font-size:clamp(34px,9vw,44px)!important;line-height:1.08!important;letter-spacing:-1.5px!important}
+  .v8-page.v9-page .v9-lead{font-size:12px!important;line-height:1.7!important}
+  .v8-page.v9-page .v9-hero-art{height:210px!important;min-height:210px!important}
+}

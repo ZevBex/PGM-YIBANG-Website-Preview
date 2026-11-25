@@ -1,0 +1,413 @@
+/* V9.42.8 — Mega-menu corner CTA alignment.
+   Retains the dark/gold hover contrast from V9.42.7 while matching the
+   bottom-left intro CTA and right feature-card CTA in size and baseline. */
+
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921 {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  gap: 8px !important;
+  min-height: 28px !important;
+  padding: 6px 9px !important;
+  border: 1px solid transparent !important;
+  border-radius: 7px !important;
+  background: transparent !important;
+  color: #e2c78b !important;
+  font-size: 9px !important;
+  line-height: 1.4 !important;
+  font-weight: 800 !important;
+  letter-spacing: .3px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease,
+              box-shadow .18s ease, transform .18s ease !important;
+}
+
+/* Match the intro link's bottom inset to the feature card's 19px inset. */
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 {
+  padding-bottom: 19px !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-intro-link-v921 {
+  margin-top: auto !important;
+}
+
+/* Anchor the right CTA to the same baseline as the intro CTA.
+   The three text elements are shifted up to preserve their prior visual position
+   after the CTA is removed from the card's flex flow. */
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 {
+  position: relative !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > .mega-feature-kicker-v921,
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > h3,
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > p {
+  position: relative !important;
+  top: -14px !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-feature-link-v921 {
+  position: absolute !important;
+  left: 18px !important;
+  bottom: 19px !important;
+  margin: 0 !important;
+}
+
+/* Same restrained dark/gold hover and focus state on both CTAs. */
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921:hover,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921:focus-visible,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921:active,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921:hover,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921:focus-visible,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921:active {
+  background: rgba(200, 169, 106, .14) !important;
+  border-color: rgba(200, 169, 106, .24) !important;
+  color: #f3dcae !important;
+  box-shadow: inset 0 0 0 1px rgba(200, 169, 106, .12) !important;
+}
+
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921 span,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921 span {
+  color: inherit !important;
+  line-height: inherit !important;
+}
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921 span:last-child,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921 span:last-child {
+  display: inline-block !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  transition: transform .18s ease !important;
+}
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921:hover span:last-child,
+.site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921:hover span:last-child {
+  transform: translate(2px, -1px) !important;
+}
+
+@media (max-width: 1180px) {
+  /* Desktop corner CTAs are hidden in the mobile/tablet accordion menu. */
+  .site-header.v98-header .mega-menu-v921 .mega-intro-v921,
+  .site-header.v98-header .mega-menu-v921 .mega-feature-v921 {
+    padding-bottom: initial !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921,
+  .site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921,
+  .site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-intro-link-v921 span:last-child,
+  .site-header.v98-header .mega-menu-v921 a.nav-dropdown-link.mega-feature-link-v921 span:last-child {
+    transition: none !important;
+  }
+}
+
+
+/* =========================================================
+   V9.42.9 — Make the entire left intro panel and right feature
+   card clickable, not just their small CTA labels.
+   The existing CTA anchors are stretched across their panels;
+   their visible labels remain at the original bottom positions.
+   ========================================================= */
+
+/* Left intro panel: whole column links to its existing destination. */
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 {
+  position: relative !important;
+  cursor: pointer !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921 {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 5 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 20px 19px 0 !important;
+  border: 0 !important;
+  border-radius: 9px 0 0 9px !important;
+  background: transparent !important;
+  color: #e2c78b !important;
+  font-size: 9px !important;
+  line-height: 1.4 !important;
+  font-weight: 800 !important;
+  letter-spacing: .45px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: background-color .18s ease, color .18s ease, box-shadow .18s ease !important;
+}
+
+/* Right feature card: whole card links to its existing destination. */
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 {
+  position: relative !important;
+  cursor: pointer !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921 {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 5 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 19px 18px !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  background: transparent !important;
+  color: #e2c78b !important;
+  font-size: 8.5px !important;
+  line-height: 1.4 !important;
+  font-weight: 850 !important;
+  letter-spacing: .3px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: background-color .18s ease, color .18s ease, box-shadow .18s ease !important;
+}
+
+/* A subtle whole-panel response makes the larger click target discoverable. */
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921:hover,
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921:active {
+  background: rgba(200, 169, 106, .055) !important;
+  color: #f3dcae !important;
+  box-shadow: inset 0 0 0 1px rgba(200, 169, 106, .20) !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921:hover,
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921:active {
+  background: rgba(200, 169, 106, .075) !important;
+  color: #f3dcae !important;
+  box-shadow: inset 0 0 0 1px rgba(200, 169, 106, .34) !important;
+}
+
+/* Keyboard users get a focus ring around the complete clickable panel. */
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921:focus-visible,
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921:focus-visible {
+  outline: 2px solid #e5cf9d !important;
+  outline-offset: -4px !important;
+}
+
+/* Keep the CTA arrow movement restrained while hovering anywhere on its panel. */
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921 span:last-child,
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921 span:last-child {
+  display: inline-block !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  transition: transform .18s ease !important;
+}
+.site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921:hover span:last-child,
+.site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921:hover span:last-child {
+  transform: translate(2px, -1px) !important;
+}
+
+/* These two panels are intentionally hidden in the mobile accordion menu;
+   mobile navigation continues to use the individual category links. */
+@media (max-width: 1180px) {
+  .site-header.v98-header .mega-menu-v921 .mega-intro-v921,
+  .site-header.v98-header .mega-menu-v921 .mega-feature-v921 {
+    cursor: default !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921,
+  .site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921,
+  .site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921 span:last-child,
+  .site-header.v98-header .mega-menu-v921 .mega-feature-v921 > a.mega-feature-link-v921 span:last-child {
+    transition: none !important;
+  }
+}
+
+
+/* =========================================================
+   V9.42.10 — Navigation state: color + caret only.
+   Remove all horizontal active/open indicators. On hover or
+   current-page state, use the brand gold and turn the caret up.
+   ========================================================= */
+
+/* No underline or bottom rule for any top-level navigation state. */
+.site-header.v98-header .primary-nav-v917 > .nav-link::after,
+.site-header.v98-header .primary-nav-v917 > .nav-link:hover::after,
+.site-header.v98-header .primary-nav-v917 > .nav-link.is-active::after,
+.site-header.v98-header .primary-nav-v917 > .nav-link[aria-current="page"]::after,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle::after,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle:hover::after,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle.is-active::after,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917[open] > .nav-dropdown-toggle::after {
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Hover and current-page states use the existing PGM/YIBANG gold. */
+.site-header.v98-header .primary-nav-v917 > .nav-link:hover,
+.site-header.v98-header .primary-nav-v917 > .nav-link.is-active,
+.site-header.v98-header .primary-nav-v917 > .nav-link[aria-current="page"],
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917:hover > .nav-dropdown-toggle,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917[open] > .nav-dropdown-toggle,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle:hover,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle.is-active {
+  color: #e2c78b !important;
+}
+
+/* Carets turn upward on hover, while the menu is open, or on its current page. */
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle .nav-caret {
+  color: #a68a55 !important;
+  transform: rotate(0deg) !important;
+  transform-origin: 50% 50% !important;
+  transition: color .18s ease, transform .2s ease !important;
+}
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917:hover > .nav-dropdown-toggle .nav-caret,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917[open] > .nav-dropdown-toggle .nav-caret,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle:hover .nav-caret,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle.is-active .nav-caret {
+  color: #e2c78b !important;
+  transform: rotate(180deg) !important;
+}
+
+/* Keep keyboard focus visible without reintroducing an underline. */
+.site-header.v98-header .primary-nav-v917 > .nav-link:focus-visible,
+.site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle:focus-visible {
+  outline: 1px solid rgba(226, 199, 139, .75) !important;
+  outline-offset: 5px !important;
+  border-radius: 2px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle .nav-caret {
+    transition: none !important;
+  }
+}
+
+
+/* =========================================================
+   V9.42.11 — Dropdown edge spacing + compact English header.
+   Keep the original logo lockup and desktop navigation design;
+   provide more breathing room for the mega menu and prevent the
+   final English navigation item from being clipped at 1181–1320px.
+   ========================================================= */
+
+/* Desktop mega menus: increase the outer viewport margin and
+   give the introductory column enough width and breathing room. */
+@media (min-width: 1181px) {
+  .site-header.v98-header .mega-menu-v921 {
+    width: min(1180px, calc(100vw - 72px)) !important;
+    padding: 27px 30px !important;
+    grid-template-columns: 236px minmax(0, 1fr) 246px !important;
+    gap: 22px !important;
+  }
+
+  .site-header.v98-header .mega-intro-v921 {
+    padding: 2px 18px 38px 0 !important;
+  }
+
+  .site-header.v98-header .mega-intro-v921 p {
+    max-width: 100% !important;
+    font-size: 9.5px !important;
+    line-height: 1.62 !important;
+  }
+
+  .site-header.v98-header .mega-feature-v921 {
+    min-height: 210px !important;
+  }
+}
+
+/* The earlier 1181–1320px desktop range was too tight for the
+   full English navigation. Tighten only the inter-item spacing
+   and secondary controls; do not reduce or alter the PGM/YIBANG logo. */
+@media (min-width: 1181px) and (max-width: 1320px) {
+  .site-header.v98-header .header-inner {
+    width: calc(100% - 40px) !important;
+    gap: 8px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    gap: 5px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 > .nav-link,
+  .site-header.v98-header .primary-nav-v917 > .nav-dropdown-v917 > .nav-dropdown-toggle {
+    font-size: 8.5px !important;
+    gap: 3px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 .nav-caret {
+    margin-left: 1px !important;
+    font-size: 11px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 > .language-switch {
+    gap: 4px !important;
+    padding: 6px 7px !important;
+    font-size: 8px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 > .nav-cta {
+    min-width: 94px !important;
+    min-height: 36px !important;
+    height: 36px !important;
+    gap: 5px !important;
+    padding: 0 8px !important;
+    font-size: 8px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 > .nav-cta span:first-child {
+    font-size: 8px !important;
+  }
+
+  .site-header.v98-header .primary-nav-v917 > .nav-cta span:last-child {
+    font-size: 12px !important;
+  }
+}
+
+/* Preserve the mobile accordion geometry unchanged. */
+@media (max-width: 1180px) {
+  .site-header.v98-header .mega-menu-v921 {
+    width: 100% !important;
+    padding: 0 !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* =========================================================
+   V9.42.12 — Add true left inset to the mega-menu intro panel.
+   Preserve the text measure by widening the intro column by
+   the same amount as the added left inset.
+   ========================================================= */
+@media (min-width: 1181px) {
+  .site-header.v98-header .mega-menu-v921 {
+    grid-template-columns: 254px minmax(0, 1fr) 246px !important;
+  }
+
+  .site-header.v98-header .mega-menu-v921 .mega-intro-v921 {
+    padding: 2px 18px 38px 18px !important;
+  }
+
+  .site-header.v98-header .mega-menu-v921 .mega-intro-v921 > a.mega-intro-link-v921 {
+    padding: 0 18px 19px 18px !important;
+  }
+}
+
+
+/* =========================================================
+   V9.42.13 — Mobile mega-menu positioning fix.
+   The desktop panel uses left:50% + translateX(-50%). When
+   switching to position:static at tablet/mobile widths, those
+   offsets must also be reset or the links are pushed offscreen.
+   ========================================================= */
+@media (max-width: 1180px) {
+  .site-header.v98-header .mega-menu-v921 {
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

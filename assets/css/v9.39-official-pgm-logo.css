@@ -1,0 +1,73 @@
+/* V9.39 — use the supplied official PGM emblem in both language modes */
+.brand-lockup-v939{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:8px!important;
+}
+.brand-lockup-v939 .brand-symbol-v939{
+  display:grid!important;
+  place-items:center!important;
+  width:36px!important;
+  height:36px!important;
+  min-width:36px!important;
+  flex:0 0 36px!important;
+  padding:3px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  border-radius:3px!important;
+  background:#fff!important;
+  border:1px solid rgba(255,255,255,.72)!important;
+}
+.brand-lockup-v939 .brand-symbol-v939 img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+.brand-lockup-v939 .brand-primary-v938{
+  gap:3px!important;
+}
+.brand-lockup-v939 .brand-mark{
+  font-size:27px!important;
+  letter-spacing:-1.8px!important;
+}
+.brand-lockup-v939 .brand-meaning-v938{
+  font-size:5.55px!important;
+  letter-spacing:.35px!important;
+}
+.brand-lockup-v939 .brand-divider-v938{
+  height:34px!important;
+  margin:0 2px!important;
+}
+.brand-lockup-v939 .brand-sub-v938{
+  gap:3px!important;
+}
+@media(max-width:620px){
+  .brand-lockup-v939{gap:6px!important}
+  .brand-lockup-v939 .brand-symbol-v939{
+    width:31px!important;
+    height:31px!important;
+    min-width:31px!important;
+    flex-basis:31px!important;
+    padding:2.5px!important;
+  }
+  .brand-lockup-v939 .brand-mark{font-size:24px!important}
+  .brand-lockup-v939 .brand-meaning-v938{
+    font-size:5.05px!important;
+    letter-spacing:.12px!important;
+  }
+  .brand-lockup-v939 .brand-divider-v938{height:29px!important}
+}
+@media(max-width:360px){
+  .brand-lockup-v939{gap:5px!important}
+  .brand-lockup-v939 .brand-symbol-v939{
+    width:28px!important;
+    height:28px!important;
+    min-width:28px!important;
+    flex-basis:28px!important;
+    padding:2px!important;
+  }
+  .brand-lockup-v939 .brand-mark{font-size:22px!important}
+  .brand-lockup-v939 .brand-meaning-v938{font-size:4.7px!important}
+}

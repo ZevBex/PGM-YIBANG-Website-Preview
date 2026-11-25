@@ -1,0 +1,102 @@
+
+/* V9.30 — real PGM / Liang Wenchong imagery and featured golf-club case layout */
+.v917-player-case-link {
+  padding-block: clamp(58px, 7vw, 92px);
+}
+.v930-player-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.78fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+}
+.v930-player-feature-copy {
+  min-width: 0;
+  max-width: 650px;
+}
+.v930-player-feature-copy h2 {
+  margin: 12px 0 16px;
+  color: #102a56;
+  font: 600 clamp(30px, 3.5vw, 46px)/1.12 var(--display, Georgia, serif);
+  letter-spacing: -0.025em;
+}
+.v930-player-feature-copy h2 em {
+  color: #b28a49;
+  font-style: normal;
+}
+.v930-player-feature-lead {
+  max-width: 610px;
+  margin: 0 0 13px;
+  color: #435365;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.85;
+}
+.v930-player-feature-note {
+  max-width: 580px;
+  margin: 0;
+  color: #718091;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.v930-player-feature-cta {
+  margin-top: 24px;
+}
+.v930-player-feature-media {
+  width: min(100%, 420px);
+  justify-self: end;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(16,42,86,.10);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(16,42,86,.12);
+}
+.v930-player-feature-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  border-radius: 11px;
+  background: #f7f6f3;
+}
+.v930-player-feature-media figcaption {
+  padding: 11px 5px 3px;
+  color: #687687;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+}
+.pd-cobrand-page .pd-chong-gallery-media-v929,
+.pd-cobrand-page .pd-chong-gallery-visual-v929 {
+  aspect-ratio: 1 / 1;
+}
+.pd-cobrand-page .pd-chong-gallery-signing-v930 {
+  object-fit: contain;
+  background: #0b1e2e;
+  z-index: 2;
+}
+@media (max-width: 760px) {
+  .v930-player-feature-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .v930-player-feature-copy {
+    max-width: none;
+  }
+  .v930-player-feature-media {
+    width: min(100%, 410px);
+    justify-self: center;
+  }
+  .v930-player-feature-cta {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .v917-player-case-link {
+    padding-block: 48px;
+  }
+  .v930-player-feature-media {
+    padding: 7px;
+    border-radius: 14px;
+  }
+}

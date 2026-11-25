@@ -1,0 +1,50 @@
+/* V9.27 — unified PGM co-brand / CHONG Series case gallery */
+.co-brand-case-gallery .chong-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2.4vw, 28px);
+  max-width: 1040px;
+  margin: 30px auto 0;
+}
+.co-brand-case-gallery .chong-gallery-grid figure {
+  min-width: 0;
+}
+.co-brand-case-gallery .chong-gallery-slot {
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  background: #e9edf1;
+}
+.co-brand-case-gallery .chong-gallery-slot::before,
+.co-brand-case-gallery .chong-gallery-slot::after {
+  display: none;
+}
+.co-brand-case-gallery .chong-gallery-slot img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.co-brand-case-gallery figcaption {
+  color: var(--muted, #6b7280);
+  font-size: 12px;
+  line-height: 1.75;
+  padding: 13px 2px 0;
+}
+.co-brand-case-gallery figcaption strong {
+  color: var(--navy, #102a56);
+  font-size: 13px;
+}
+.co-brand-case-gallery .buyer-disclaimer {
+  max-width: 920px;
+  margin: 22px auto 0;
+  font-size: 11px;
+  line-height: 1.75;
+}
+@media (max-width: 680px) {
+  .co-brand-case-gallery .chong-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

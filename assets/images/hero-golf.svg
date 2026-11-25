@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Premium golf club on a dramatic golf course background">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07172d"/><stop offset=".55" stop-color="#102b4b"/><stop offset="1" stop-color="#25445d"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6f7f8"/><stop offset=".25" stop-color="#8b98a6"/><stop offset=".55" stop-color="#f4f5f6"/><stop offset="1" stop-color="#485566"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0dfb4"/><stop offset="1" stop-color="#b58d4d"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#7592a4" stop-opacity=".42"/><stop offset="1" stop-color="#7592a4" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<circle cx="1120" cy="330" r="500" fill="url(#glow)"/>
+<path d="M0 740 C260 650 450 710 690 650 S1180 610 1600 700 V1000 H0Z" fill="#173b42" opacity=".8"/>
+<path d="M0 820 C330 740 550 800 830 740 S1300 730 1600 780 V1000 H0Z" fill="#244e48" opacity=".9"/>
+<path d="M0 900 C350 850 670 890 980 835 S1360 850 1600 870 V1000 H0Z" fill="#426456" opacity=".7"/>
+<path d="M1150 0 L1600 0 L1600 1000 L1420 1000 Q1350 570 1150 0Z" fill="#071426" opacity=".22"/>
+<ellipse cx="1125" cy="810" rx="290" ry="42" fill="#020a14" opacity=".45" filter="url(#shadow)"/>
+<!-- club shaft -->
+<path d="M1210 150 L980 770" stroke="#050c16" stroke-width="30" stroke-linecap="round" opacity=".35"/>
+<path d="M1192 120 L966 752" stroke="url(#metal)" stroke-width="15" stroke-linecap="round"/>
+<path d="M1187 128 L965 748" stroke="#fff" stroke-width="2" opacity=".75"/>
+<!-- driver head -->
+<g transform="translate(0 0) rotate(-14 900 780)">
+ <path d="M785 730 C820 660 1000 640 1105 700 C1180 745 1158 835 1078 876 C970 931 806 890 770 825 C748 790 757 760 785 730Z" fill="#020914" opacity=".45" transform="translate(10 18)"/>
+ <path d="M785 730 C820 660 1000 640 1105 700 C1180 745 1158 835 1078 876 C970 931 806 890 770 825 C748 790 757 760 785 730Z" fill="url(#metal)" stroke="#f7f8fa" stroke-width="3"/>
+ <path d="M804 738 C872 688 1018 683 1092 723 C1130 746 1125 795 1080 825 C1000 878 848 866 800 821 C777 797 781 759 804 738Z" fill="#172b40" stroke="#8293a4" stroke-width="3"/>
+ <path d="M833 746 C900 710 1022 708 1082 737" fill="none" stroke="url(#gold)" stroke-width="5" opacity=".9"/>
+ <path d="M824 810 Q934 858 1072 812" fill="none" stroke="#dce3e8" stroke-width="2" opacity=".55"/>
+ <circle cx="1068" cy="780" r="9" fill="url(#gold)"/>
+</g>
+<circle cx="1325" cy="235" r="5" fill="#d4bd8b"/><circle cx="1360" cy="265" r="2" fill="#fff" opacity=".6"/><circle cx="1280" cy="190" r="3" fill="#fff" opacity=".6"/>
+<path d="M0 0 H1600 V1000 H0Z" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="2"/>
+</svg>
